@@ -1,0 +1,12 @@
+@import "main.css";
+
+.blogs img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.tage{
+    background: url(../images/blog/tage.png);
+    height: 100%;
+    color: white;
+}

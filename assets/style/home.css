@@ -1,0 +1,305 @@
+@import "main.css";
+
+/*--------------------------
+    Banner Styles  
+--------------------------*/
+
+.banner-content {
+    position: relative;
+}
+
+.banner-content .banner-bg {
+    width: 100%;
+    height: 490px;
+}
+
+.banner-content .banner-bg-pic {
+    position: absolute;
+    margin: auto;
+    bottom: -80px;
+    right: 600px;
+    height: 435px;
+    width: 258px;
+}
+
+.banner-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner-text p {
+    font-size: 30px;
+}
+
+.banner-lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner-lower .drop-vendors,
+.banner-lower .drop-location {
+    background-color: white;
+    color: black;
+    height: 100%;
+    width: 15vw;
+}
+
+.banner-lower .drop-vendors{
+    border-radius: 4px 0 0 4px;
+}
+
+.banner-lower ul {
+    margin: 12px 5px;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.banner-lower button {
+    border-radius: 0 4px 4px 0;
+    width: 150px;
+}
+
+/*--------------------------
+    venue field Styles  
+--------------------------*/
+
+.venue-cards .card {
+    border: none;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 22px;
+    border-radius: 8px;
+    line-height: 30px;
+    
+}
+
+.venue-cards img {
+    height: 125px;
+    width: 125px;
+}
+
+.venue-cards .card-text {
+    color: var(--color-primary5);
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+
+
+/* top search */
+
+.top-search-div {
+    background-color: var(--color-primary10);
+    padding: auto 100px;
+}
+
+.top-search-div .card {
+    padding: 0;
+    background: none;
+    border: none;
+    height: 350px;
+}
+
+.top-search-div img {
+    position: relative;
+    height: 250px;
+}
+
+.top-search-div .card-body {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    top: 220px;
+    margin: auto 5%;
+    text-align: left;
+    border-radius: 0 0 4px 4px;
+}
+
+/* wed-themes */
+
+.wed-theme-div .card{
+    width: 90%;
+    border: 1px solid #F3F3F3;
+}
+
+.wed-theme-div .card img {
+    padding: 15px;
+}
+
+/* services-div */
+
+.services-div {
+    border: 2px solid var(--heading-color4);
+    border-radius: 4px;
+}
+
+.services-div .card {
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    background: none;
+}
+
+.services-div .card img {
+    height: 195px;
+    width: 100%;
+    border-radius: 0;
+}
+
+.services-div .card-body {
+    padding: 5px 0;
+}
+
+.services-div .card a {
+    border-radius: 0;
+}
+
+.services-div .slick-prev {
+    left: 1%;
+    z-index: 4;
+}
+
+.services-div .slick-next {
+    left: 95%;
+    z-index: 4;
+}
+
+.services-div .slick-prev:before,
+.services-div .slick-next:before {
+    color: var(--heading-color2);
+    font-size: 30px;
+}
+.services-div .col-lg-7{
+    position: relative;
+}
+
+.services-div .bg-pink{
+    overflow: hidden;
+}
+
+.triangle {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border-top: 15.7rem solid transparent;
+    border-left: 15rem solid white;
+    border-bottom: 15.8rem solid transparent;
+    z-index: 2;
+  }
+
+.services-div .slider2{
+    z-index: 3;
+}
+
+/* experiences-div */
+
+.experiences-div .card {
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+
+.experiences-div img {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    border-radius: 0;
+}
+
+.experiences-div .card-body {
+    position: absolute;
+    background-color: white;
+    top: 30%;
+    height: 66%;
+    left: 72%;
+    width: 60%;
+}
+
+/* collections-div */
+
+.collections-div .card {
+    border: none;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--color-primary10);
+    width: 75%;
+    height: 280px;
+}
+
+.collections-div img {
+    position: relative;
+    height: 217px;
+    width: 200px;
+    z-index: 100;
+    top: -60px;
+    border-radius: 0;
+}
+
+.collections-div .card-body {
+    position: absolute;
+    width: 250px;
+    bottom: 0px;
+}
+
+.collections-div .card-body h5 {
+    position: relative;
+    top: 80%;
+    text-align: center;
+}
+
+/* vendors-div */
+
+.vendors-div .card {
+    border: none;
+    border-radius: 0;
+    height: 300px;
+    float: left;
+    padding: 10px;
+    align-items: flex-start;
+    /* margin: 10px; */
+}
+
+.vendors-div img {
+    position: relative;
+    height: 207px;
+    width: 257px;
+    border-radius: 0;
+}
+
+.vendors-div .card-body {
+    position: absolute;
+    background-color: white;
+    top: 40%;
+    left: 48%;
+    width: 60%;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* blog-div */
+
+.blog-div .card {
+    width: 100%;
+    border: none;
+}
+
+.blog-div img {
+    width: 100%;
+}
+
+.blog-div a {
+    font-size: 1.1rem;
+}
+
+.blog-div i {
+    color: var(--color-primary4);
+    padding-top: 2px;
+}
+
+

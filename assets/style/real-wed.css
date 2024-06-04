@@ -1,0 +1,22 @@
+@import "main.css";
+
+.real-wed .content .row div {
+    background-color: white;
+    padding: 2rem;
+    margin: auto 1rem;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    width: 22rem;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.real-wed .content .row div img {
+    height: 3rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+}
+
+.real-wed .card{
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
