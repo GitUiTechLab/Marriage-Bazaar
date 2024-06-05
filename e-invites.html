@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guide | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
+    <title>E-Invites | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
 
     <!-- CSS
 	============================================ -->
@@ -21,9 +21,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="assets/style/venue.css">
-    <link rel="stylesheet" href="assets/style/portfolio.css">
-    <link rel="stylesheet" href="assets/style/collection.css">
-
 
 </head>
 
@@ -56,7 +53,8 @@
                     </div>
                     <div class="user-penal">
                         <div class="quote-icon quote-user d-flex d-none d-md-flex flex-row">
-                            <span ><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1" href="login.html">Login </a>/ <a class="px-1 mx-1" href="register.html">Register</a> </span>
+                            <span><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1" href="login.html">Login
+                                </a>/ <a class="px-1 mx-1" href="register.html">Register</a> </span>
                         </div>
                         <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
                             <a class="white-box-icon" href="login.html"><i class="fa-regular fa-user"></i></a>
@@ -78,9 +76,9 @@
                             <li class="nav-link"><a class="outline" href="services.html">Services</a></li>
                             <li class="nav-link"><a class="outline" href="collection.html">Photos</a></li>
                             <li class="nav-link"><a class="outline" href="real-wed.html">Real Weddings</a></li>
-                            <li class="nav-link active"><a class="" href="blogs.html">Blog</a></li>
+                            <li class="nav-link"><a class="outline" href="blogs.html">Blog</a></li>
                             <li class="nav-link"><a class="outline" href="shop.html">Shop</a></li>
-                            <li class="nav-link"><a class="outline" href="e-invites.html">E-Invites</a></li>
+                            <li class="nav-link active"><a class="" href="e-invites.html">E-Invites</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -93,204 +91,303 @@
                     </div>
                 </div>
             </div>
+            <div class="lower-header row align-items-center">
+                <div class="col">
+                    <ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span class="ms-0 px-4 me-4 drop-name">Sort By</span>
+                                <i class="fa-solid fa-angle-down py-1"></i>
+                            </a>
+                            <ul class="dropdown-menu align-items-center px-0">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span class="ms-0 px-4 me-4 drop-name">Price</span>
+                                <i class="fa-solid fa-angle-down py-1"></i>
+                            </a>
+                            <ul class="dropdown-menu align-items-center px-0">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span class="ms-0 px-4 me-4 drop-name">Culture</span>
+                                <i class="fa-solid fa-angle-down py-1"></i>
+                            </a>
+                            <ul class="dropdown-menu align-items-center px-0">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span class="ms-0 px-4 me-4 drop-name">Theme</span>
+                                <i class="fa-solid fa-angle-down py-1"></i>
+                            </a>
+                            <ul class="dropdown-menu align-items-center px-0">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </Header>
 
-        <div class="container-fluid p-0 main-detail">
-            <div class="venue-bg">
-                <img src="assets/images/guide/guide-bg.png" alt="">
+        <div class="container ">
+            <div class="buttons p-4 d-flex justify-content-between">
+                <a class="con-link title fs-5 fw-semibold py-2 activeContainer"
+                    onclick="toggleVisibility('container1');" role="button">Wedding Cards</a>
+                <a class="con-link title fs-5 fw-semibold py-2" onclick="toggleVisibility('container2');"
+                    role="button">Video Cards</a>
+                <a class="con-link title fs-5 fw-semibold py-2" onclick="toggleVisibility('container3');"
+                    role="button">Save the date cards</a>
             </div>
-            <div class="container-fluid detail-content row ms-2 collection-add">
-                <div class="detail-left col-12 p-5 me-3 w-75">
-                    <h3 class="fw-semibold mb-4">I am looking for</h3>
-                    <ul class="w-100 border rounded p-3 fs-5">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false"><span class="ms-0 me-3 text-body-secondary">Wedding
-                                    Vendors</span><i class="fa-solid fa-angle-down float-end color-pink fs-3"></i>
-                            </a>
-                            <ul class="dropdown-menu align-items-center px-0">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="w-100 border rounded p-3 fs-5">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false"><span class="ms-0 me-3 text-body-secondary">In City</span><i
-                                    class="fa-solid fa-angle-down float-end color-pink fs-3"></i>
-                            </a>
-                            <ul class="dropdown-menu align-items-center px-0">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="text-center">
-                        <a href=""><button class="btn-trans m-0 mt-4 w-25">Search</button></a>
-                    </div>
+            <div id="container1">
+                <div class="d-flex flex-wrap justify-content-around">
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite1.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite1.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite1.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite1.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite1.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite1.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite1.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite1.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="container2" style="display: none;">
+                <div class="d-flex flex-wrap justify-content-around">
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite2.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite2.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite2.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite2.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite2.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite2.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite2.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite2.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="container3" style="display: none;">
+                <div class="d-flex flex-wrap justify-content-around">
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite3.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite3.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite3.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite3.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite3.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite3.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite3.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
+                    <a href="e-invite-custom.html">
+                        <div class="d-flex flex-column mx-2 my-4">
+                            <img src="assets/images/e-invites/invite3.png" alt="">
+                            <span class="fs-5">Serenity</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="container my-5">
-            <div class="section-title py-4 row mb-3">
-                <h2 class="title">Wedding Decor Ideas</h2>
-                <span class="text-body-secondary fs-5">The decor is the most important element of the wedding venue that
-                    sets
-                    the mood and theme of the wedding. From floral installations to lighting, from stage setup to the
-                    mandap decor, read on to know more about the latest trends and unique decor ideas for your upcoming
-                    wedding.</span>
+        <div class="container faq-div mb-5">
+            <div class="section-title py-4 row text-center">
+                <h2 class="title"><strong>FAQ</strong> Lorem ipsum dolor sit amet, consectetur</h2>
+                <span>Lorem ipsum dolor sit amet, consectetur</span>
             </div>
-            <div class="row mb-5">
-                <div class="col-lg-6 px-5">
-                    <img src="assets/images/guide/guide1.png" alt="">
-                    <div class="p-4">
-                        <h3 class="text-center py-1">Winter Wonderiand Decor Ideas that Caught
-                            Out Eye!</h3>
-                        <p>By Apoov | !3 Dec, 2023 | 2 im read</p>
-                        <p class="text-body-secondary fs-5">Winter weddings are the best time to get married. The
-                            weather is great, your skin and hair are at their best, you can party without sweating or
-                            being worried about the rain and the last thing that we...</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 px-5">
-                    <img src="assets/images/guide/guide1.png" alt="">
-                    <div class="p-4">
-                        <h3 class="text-center py-1">Winter Wonderiand Decor Ideas that Caught
-                            Out Eye!</h3>
-                        <p>By Apoov | !3 Dec, 2023 | 2 im read</p>
-                        <p class="text-body-secondary fs-5">Winter weddings are the best time to get married. The
-                            weather is great, your skin and hair are at their best, you can party without sweating or
-                            being worried about the rain and the last thing that we...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-lg-6 px-5">
-                    <img src="assets/images/guide/guide1.png" alt="">
-                    <div class="p-4">
-                        <h3 class="text-center py-1">Winter Wonderiand Decor Ideas that Caught
-                            Out Eye!</h3>
-                        <p>By Apoov | !3 Dec, 2023 | 2 im read</p>
-                        <p class="text-body-secondary fs-5">Winter weddings are the best time to get married. The
-                            weather is great, your skin and hair are at their best, you can party without sweating or
-                            being worried about the rain and the last thing that we...</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 px-5">
-                    <img src="assets/images/guide/guide1.png" alt="">
-                    <div class="p-4">
-                        <h3 class="text-center py-1">Winter Wonderiand Decor Ideas that Caught
-                            Out Eye!</h3>
-                        <p>By Apoov | !3 Dec, 2023 | 2 im read</p>
-                        <p class="text-body-secondary fs-5">Winter weddings are the best time to get married. The
-                            weather is great, your skin and hair are at their best, you can party without sweating or
-                            being worried about the rain and the last thing that we...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-lg-6 px-5">
-                    <img src="assets/images/guide/guide1.png" alt="">
-                    <div class="p-4">
-                        <h3 class="text-center py-1">Winter Wonderiand Decor Ideas that Caught
-                            Out Eye!</h3>
-                        <p>By Apoov | !3 Dec, 2023 | 2 im read</p>
-                        <p class="text-body-secondary fs-5">Winter weddings are the best time to get married. The
-                            weather is great, your skin and hair are at their best, you can party without sweating or
-                            being worried about the rain and the last thing that we...</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 px-5">
-                    <img src="assets/images/guide/guide1.png" alt="">
-                    <div class="p-4">
-                        <h3 class="text-center py-1">Winter Wonderiand Decor Ideas that Caught
-                            Out Eye!</h3>
-                        <p>By Apoov | !3 Dec, 2023 | 2 im read</p>
-                        <p class="text-body-secondary fs-5">Winter weddings are the best time to get married. The
-                            weather is great, your skin and hair are at their best, you can party without sweating or
-                            being worried about the rain and the last thing that we...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mb-5">
-            <h2 class="text-center fw-semibold p-3">Browse our Guides</h2>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="card p-3">
-                        <img src="assets/images/guide/g1.png" alt="...">
-                        <div class="card-body fs-5 fw-semibold">
-                            <h5 class="card-title">Decor Guide</h5>
-                            <a class="outline color-pink" href="#" class="btn btn-primary">Explore</a>
+            <div class="faqs p-2 my-3">
+                <ul class="accordion p-0">
+                    <li>
+                        <input type="radio" name="accordion" id="first" checked>
+                        <label for="first">Question1</label>
+                        <div class="content mx-5">
+                            <p class="m-0 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, est.
+                                Voluptas
+                                magni incidunt, pariatur officia doloribus optio libero sed iusto.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card p-3">
-                        <img src="assets/images/guide/g2.png" alt="...">
-                        <div class="card-body fs-5 fw-semibold">
-                            <h5 class="card-title">Decor Guide</h5>
-                            <a class="outline color-pink" href="#" class="btn btn-primary">Explore</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="faqs p-2 my-3">
+                <ul class="accordion p-0">
+                    <li>
+                        <input type="radio" name="accordion" id="second">
+                        <label for="second">Question2</label>
+                        <div class="content mx-5">
+                            <p class="m-0 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, est.
+                                Voluptas
+                                magni incidunt, pariatur officia doloribus optio libero sed iusto.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card p-3">
-                        <img src="assets/images/guide/g3.png" alt="...">
-                        <div class="card-body fs-5 fw-semibold">
-                            <h5 class="card-title">Decor Guide</h5>
-                            <a class="outline color-pink" href="#" class="btn btn-primary">Explore</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="faqs p-2 my-3">
+                <ul class="accordion p-0">
+                    <li>
+                        <input type="radio" name="accordion" id="third">
+                        <label for="third">Question3</label>
+                        <div class="content mx-5">
+                            <p class="m-0 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, est.
+                                Voluptas
+                                magni incidunt, pariatur officia doloribus optio libero sed iusto.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card p-3">
-                        <img src="assets/images/guide/g4.png" alt="...">
-                        <div class="card-body fs-5 fw-semibold">
-                            <h5 class="card-title">Decor Guide</h5>
-                            <a class="outline color-pink" href="#" class="btn btn-primary">Explore</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="faqs p-2 my-3">
+                <ul class="accordion p-0">
+                    <li>
+                        <input type="radio" name="accordion" id="fourth">
+                        <label for="fourth">Question4</label>
+                        <div class="content mx-5">
+                            <p class="m-0 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, est.
+                                Voluptas
+                                magni incidunt, pariatur officia doloribus optio libero sed iusto.</p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-
-        <div class="container bg-pink text-center px-5 mb-5">
-            <div class="border-bottom border-2 border-black py-4">
-                <h3 class="text-center fw-semibold py-1">Winter Wonderiand Decor Ideas that Caught
-                    Out Eye!</h3>
-                <a href=""><button class="btn-pink m-4" type="submit">Submit Wedding</button></a>
-            </div>
-            <div class="py-4">
-                <h3 class="text-center fw-semibold py-1">Get more wedding ideas in your inbox</h3>
-                <a href=""><button class="btn-trans m-4 w-25">Enter your email</button></a><br>
-                <a href=""><button class="btn-pink m-4 w-25">I want More</button></a>
-            </div>
-        </div>
-
-        <div class="container text-center mb-5">
-            <h3 class="fw-semibold py-1">More Inspiration on Instagram</h3>
-            <h4 class="fw-semibold py-1">@Marriaae_Bazaar</h4>
-            <div class="d-flex flex-wrap justify-content-center">
-                <img src="assets/images/insta/insta1.png" alt="">
-                <img src="assets/images/insta/insta2.png" alt="">
-                <img src="assets/images/insta/insta3.png" alt="">
-                <img src="assets/images/insta/insta4.png" alt="">
-                <img src="assets/images/insta/insta5.png" alt="">
-                <img src="assets/images/insta/insta6.png" alt="">
-                <img src="assets/images/insta/insta7.png" alt="">
-                <img src="assets/images/insta/insta8.png" alt="">
-            </div>
-            <a href=""><button class="btn-pink m-4 px-5">Follow</button></a>
+            <a href=""> <button class="btn-pink my-4">Learn More</button></a>
         </div>
     </div>
+
 
     <!-- Footer -->
     <Footer class="footer-container">

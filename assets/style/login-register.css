@@ -1,0 +1,56 @@
+@import "main.css";
+
+.login {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.login .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.login .left form {
+    position: relative;
+    background-color: var(--color-primary9);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.login .left form input {
+    border: none;
+    padding: 12px;
+    margin: 5px auto;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.field-icon {
+    float: right;
+    margin-right: 15px;
+    margin-top: -35px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.login .left form .btn-trans{
+    border: none;
+    background-color: white;
+    margin: 5px;
+}
+
+
+.login .right {
+    width: 50%;
+}
+
+.login .right img {
+    height: 100vh;
+    width: 100%;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding-trends-Details | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
+    <title>E-Invites-Custom | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
 
     <!-- CSS
 	============================================ -->
@@ -21,9 +21,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="assets/style/venue.css">
-    <link rel="stylesheet" href="assets/style/portfolio.css">
-    <link rel="stylesheet" href="assets/style/collection.css">
-
 
 </head>
 
@@ -56,7 +53,8 @@
                     </div>
                     <div class="user-penal">
                         <div class="quote-icon quote-user d-flex d-none d-md-flex flex-row">
-                            <span ><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1" href="login.html">Login </a>/ <a class="px-1 mx-1" href="register.html">Register</a> </span>
+                            <span><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1" href="login.html">Login
+                                </a>/ <a class="px-1 mx-1" href="register.html">Register</a> </span>
                         </div>
                         <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
                             <a class="white-box-icon" href="login.html"><i class="fa-regular fa-user"></i></a>
@@ -80,7 +78,7 @@
                             <li class="nav-link"><a class="outline" href="real-wed.html">Real Weddings</a></li>
                             <li class="nav-link"><a class="outline" href="blogs.html">Blog</a></li>
                             <li class="nav-link"><a class="outline" href="shop.html">Shop</a></li>
-                            <li class="nav-link"><a class="outline" href="e-invites.html">E-Invites</a></li>
+                            <li class="nav-link active"><a class="" href="e-invites.html">E-Invites</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -95,34 +93,54 @@
             </div>
         </Header>
 
-        <div class="container-fluid p-0 main-detail">
-            <div class="venue-bg">
-                <img src="assets/images/collections/collection-sim1-bg.png" alt="">
+        <div class="container ">
+            <div class="text-center my-3">
+                <h1>Serenity</h1>
             </div>
-            <div class="container-fluid detail-content row ms-2 collection-add">
-                <div class="detail-left col-12 p-5 me-3 w-75">
-                    <div>
-                        <p><i class="fa-regular fa-clock me-2"></i>
-                            <span>Uploaded 10 day ago</span><i class="close fa-solid fa-circle-xmark float-end fs-2"
-                                onclick="close_div()"></i>
-                        </p>
-                    </div>
-                    <h4 class="fw-semibold">Photo of royal bridal look in a heavy maroon lehenga</h4>
-                    <hr>
-                    <h4 class="fw-semibold">View More photos from this Album</h4>
-                    <div class="d-flex ">
-                        <img src="assets/images/collections/col1.png" alt="">
-                        <img src="assets/images/collections/col2.png" alt="">
-                        <img src="assets/images/collections/col3.png" alt="">
-                        <img src="assets/images/collections/col4.png" alt="">
-                        <img src="assets/images/collections/col5.png" alt="">
-                    </div>
+            <div class="buttons p-4 d-flex justify-content-evenly">
+                <a class="con-link title fs-5 fw-semibold py-2 activeContainer"
+                    onclick="toggleVisibility('container1');" role="button"><button class="btn-trans p-2">page
+                        1</button></a>
+                <a class="con-link title fs-5 fw-semibold py-2" onclick="toggleVisibility('container2');"
+                    role="button"><button class="btn-trans p-2">page 2</button></a>
+                <a class="con-link title fs-5 fw-semibold py-2" onclick="toggleVisibility('container3');"
+                    role="button"><button class="btn-trans p-2">page 3</button></a>
+                <a class="con-link title fs-5 fw-semibold py-2" onclick="toggleVisibility('container4');"
+                    role="button"><button class="btn-trans p-2">page 4</button></a>
+                <a class="con-link title fs-5 fw-semibold py-2" onclick="toggleVisibility('container5');"
+                    role="button"><button class="btn-trans p-2">page 5</button></a>
+            </div>
+            <div id="container1">
+                <div class="d-flex justify-content-center">
+                    <img src="assets/images/e-invites/custom-card1.png" alt="">
                 </div>
             </div>
+            <div id="container2" style="display: none;">
+                <div class="d-flex justify-content-center">
+                    <img src="assets/images/e-invites/custom-card2.png" alt="">
+                </div>
+            </div>
+            <div id="container3" style="display: none;">
+                <div class="d-flex justify-content-center">
+                    <img src="assets/images/e-invites/custom-card3.png" alt="">
+                </div>
+            </div>
+            <div id="container4" style="display: none;">
+                <div class="d-flex justify-content-center">
+                    <img src="assets/images/e-invites/custom-card4.png" alt="">
+                </div>
+            </div>
+            <div id="container5" style="display: none;">
+                <div class="d-flex justify-content-center">
+                    <img src="assets/images/e-invites/custom-card5.png" alt="">
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <button class="btn-pink w-50">Customise the Card</button>
+            </div>
         </div>
-
-
     </div>
+
 
     <!-- Footer -->
     <Footer class="footer-container">

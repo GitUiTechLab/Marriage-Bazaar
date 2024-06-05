@@ -92,10 +92,18 @@ li {
     background-color: var(--color-primary9) !important;
 }
 
-.user-penal {
+.user-penal span{
+    display: flex;
+    flex-direction: row;
     position: absolute;
+    align-items: center;
     top: 1%;
-    left: 88%;
+    left: 90%;
+}
+
+.user-penal span a:hover{
+    background-color: var(--color-primary9);
+    border-radius: 5px;
 }
 
 /* nav-header */
@@ -301,6 +309,9 @@ li {
     color: var(--color-primary5);
 }
 
+.color-blue {
+    color: #247CA8;
+}
 /**********************
         Borders 
 ***********************/

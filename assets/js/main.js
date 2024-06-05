@@ -111,7 +111,7 @@ function decreaseCount(a, b) {
 
 // variable divs
 
-var divs = ["container1", "container2", "container3", "container4"];
+var divs = ["container1", "container2", "container3", "container4", "container5"];
 var visibleDivId = null;
 function toggleVisibility(divId) {
   if (visibleDivId !== divId) {
@@ -202,4 +202,15 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+// password
 
+$(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
