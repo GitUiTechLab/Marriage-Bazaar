@@ -10,22 +10,16 @@
 
 .banner-content .banner-bg {
     width: 100%;
-    height: 490px;
-}
-
-.banner-content .banner-bg-pic {
-    position: absolute;
-    margin: auto;
-    bottom: -80px;
-    right: 600px;
-    height: 435px;
-    width: 258px;
+    height: 62vh;
 }
 
 .banner-text {
+    text-align: start;
     color: white;
     position: absolute;
-    top: 50%;
+    top: 30vh;
+    height: 20vh;
+    /* width: 42%; */
     margin: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -46,7 +40,7 @@
     background-color: white;
     color: black;
     height: 100%;
-    width: 15vw;
+    width: 50%;
 }
 
 .banner-lower .drop-vendors{
@@ -62,6 +56,15 @@
 .banner-lower button {
     border-radius: 0 4px 4px 0;
     width: 150px;
+}
+
+@media (max-width: 1100px) {
+    .banner-text {
+        width: 80%;
+    }
+    .banner-lower {
+        width: 100%;
+    }
 }
 
 /*--------------------------
@@ -88,8 +91,6 @@
     height: 100px;
     margin-bottom: 20px;
 }
-
-
 
 /* top search */
 
@@ -207,16 +208,15 @@
     position: relative;
     height: 200px;
     width: 300px;
-    border-radius: 0;
 }
 
 .experiences-div .card-body {
     position: absolute;
     background-color: white;
     top: 30%;
-    height: 66%;
+    height: 70%;
     left: 72%;
-    width: 60%;
+    width: 20vw;
 }
 
 /* collections-div */
@@ -227,16 +227,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: row;
     background-color: var(--color-primary10);
-    width: 75%;
+    width: 86%;
     height: 280px;
 }
 
 .collections-div img {
     position: relative;
     height: 217px;
-    width: 200px;
+    width: 80%;
     z-index: 100;
     top: -60px;
     border-radius: 0;
@@ -244,7 +245,7 @@
 
 .collections-div .card-body {
     position: absolute;
-    width: 250px;
+    width: 100%; 
     bottom: 0px;
 }
 

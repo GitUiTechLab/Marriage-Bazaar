@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
+    <title>SignIn/SignUp | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
 
     <!-- CSS
 	============================================ -->
@@ -27,43 +27,41 @@
 <body>
 
     <div class="main-wrapper">
-        <div class="login">
-            <div class="left">
+        <div class="login container-fluid row">
+            <div class="left col-lg-7">
                 <form action="">
                     <div class="text-center my-2 pb-2">
-                        <h3>Login</h3>
-                        <p class="text-body-secondary">Let’s build something great</p>
+                        <h3>Sign In/Sign Up</h3>
                     </div>
-                    <div class="my-2">
-                        <label class="fs-5" for="contact">E-mail or phone number</label>
-                        <input type="text" id="contact" name="contact" placeholder="Enter here...">
+                    <div class="my-2 input-div">
+                        <img class="pe-2" src="assets/images/icons/user-pink.png" alt="">
+                        <input class="ps-2" type="text" id="contact" name="contact"
+                            placeholder="E-mail or phone number">
                     </div>
-                    <div class="my-2">
-                        <label class="control-label fs-5">Password</label>
-                        <input id="password-field" type="password" class="form-control" name="password" placeholder="Enter password...">
-                        <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                    </div>
-                    <div class="my-5">
-                        <button class="btn-pink w-100" type="submit">Login</button>
-                        <a href=""><p class="float-end my-1 color-blue">Forgot Password?</p></a>
+                    <div class="my-5 d-flex flex-row">
+                        <hr class="w-50"><span class="py-2 px-3">OR</span><hr class="w-50">
                     </div>
                     <div class="my-5 row">
-                        <button type="button" class="btn-trans col" >
+                        <div class="text-center my-2 pb-2">
+                            <h4>Continue With</h4>
+                        </div>
+                        <button type="button" class="btn-trans col">
                             <img src="assets/images/icons/google.png" alt="">
-                            Sign up with Google
-                          </button>
-                        <button type="button" class="btn-trans col" >
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="btn-trans col">
                             <img src="assets/images/icons/facebook.png" alt="">
-                            Sign up with Facebook
-                          </button>
+                            <span>Facebook</span>
+                        </button>
                     </div>
-                    <div class="mt-5 text-center">
-                        <span>Don’t have an account? <a href="register.html" class="color-blue">Register now</a> </span>
+                    <div class="my-5 text-center">
+                        <span class="text-body-secondary mx-3">Are you a Vendor?</span>
+                        <a class="btn-pink w-50 p-3" href="sign-in.html">Business Sign In</a>
                     </div>
                 </form>
             </div>
-            <div class="right">
-                <img src="assets/images/login-reg/login-bg.png" alt="">
+            <div class="right col-lg-5">
+                <img src="assets/images/login-reg/signup.png" alt="">
             </div>
         </div>
     </div>

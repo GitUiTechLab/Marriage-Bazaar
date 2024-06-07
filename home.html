@@ -26,9 +26,9 @@
 
 <body>
     <div class="main-wrapper">
-        <Header class="wed-header container-fluid ">
+        <Header class="wed-header container-fluid">
             <div class="upper-header row align-items-center ">
-                <div class="contents">
+                <div class="contents container-fluid">
                     <div class="drop-cities">
                         <ul>
                             <li class="nav-item dropdown row">
@@ -52,11 +52,12 @@
                         </ul>
                     </div>
                     <div class="user-penal">
-                        <div class="quote-icon quote-user d-flex d-none d-md-flex flex-row">
-                            <span ><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1" href="login.html">Login </a>/ <a class="px-1 mx-1" href="register.html">Register</a> </span>
+                        <div class="quote-icon quote-user d-flex d-none d-md-flex">
+                            <span><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1"
+                                    href="signin-signup.html">Sign In/Sign Up</a></span>
                         </div>
-                        <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
-                            <a class="white-box-icon" href="login.html"><i class="fa-regular fa-user"></i></a>
+                        <div class="quote-icon quote-user d-block d-md-none">
+                            <span><a href="login.html"><i class="fa-regular fa-user"></i></a></span>
                         </div>
                     </div>
                 </div>
@@ -90,15 +91,69 @@
                     </div>
                 </div>
             </div>
+            <!-- <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="p-0" href="home.html">
+                        <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="venue.html">Venues</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="vendors.html">Vendors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-trends.html">Trends</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-theme.html">Themes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="collection.html">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="real-wed.html">Real Weddings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="blogs.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="e-invites.html">E-Invites</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <div class="form-group fg--search ">
+                                <input type="text" class="input" placeholder="Search for...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav> -->
         </Header>
 
         <div class="banner">
             <div class="banner-content">
                 <img class="banner-bg" src="assets/images/banner/banner-bg.png" alt="">
                 <div class="banner-text">
-                    <h1>Unlock Your Dream Wedding Journey</h1>
-                    <p>Discover Inspiration, Connect with Vendors, and <br> Plan with Ease!</p>
-
+                    <div>
+                        <h1>Unlock Your Dream Wedding Journey</h1>
+                        <p>Discover Inspiration, Connect with Vendors, and Plan with Ease!</p>
+                    </div>
                     <div class="banner-lower">
                         <div class="drop-vendors">
                             <ul>
@@ -541,384 +596,386 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Experiences -->
-    <div class="container-fluid text-center my-5 py-5 experiences-div">
-        <div class="section-title text-center pb-4">
-            <h2 class="title">Authentic Wedding Experiences</h2>
-            <p class="sub-title">Real Couples, Real Stories: Dive Into Genuine Wedding Experiences!</p>
+        <!-- Experiences -->
+        <div class="container-fluid text-center my-5 py-5 experiences-div">
+            <div class="section-title text-center pb-4">
+                <h2 class="title">Authentic Wedding Experiences</h2>
+                <p class="sub-title">Real Couples, Real Stories: Dive Into Genuine Wedding Experiences!</p>
+            </div>
+            <div class="container-fluid bg-pink py-5">
+                <div class="row mb-2">
+                    <div class="col-lg-5">
+                        <a href="real-wed.html">
+                            <div class="card">
+                                <img src="assets/images/experience/image 24.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                                    <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <a href="real-wed.html">
+                            <div class="card">
+                                <img src="assets/images/experience/image 21.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                                    <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <a href="real-wed.html">
+                            <div class="card">
+                                <img src="assets/images/experience/image 20.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                                    <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5">
+                        <a href="real-wed.html">
+                            <div class="card">
+                                <img src="assets/images/experience/image 25.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                                    <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container-fluid bg-pink py-5">
-            <div class="row mb-2">
-                <div class="col-lg-5">
-                    <a href="real-wed.html">
+
+        <!-- Collections -->
+        <div class="container text-center my-5 py-5 collections-div">
+            <div class="section-title text-center">
+                <h2 class="title">Picture Collection to Explore</h2>
+                <p class="sub-title">Get Inspired with Stunning Wedding Photography!</p>
+            </div>
+            <div class="row slider3">
+                <div class="col-lg-3 mt-5 mt-5">
+                    <a href="collection.html"></a>
+                    <div class="card">
+                        <img src="assets/images/collections/image 26.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridal Lehenga</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
                         <div class="card">
-                            <img src="assets/images/experience/image 24.png" class="card-img-top" alt="...">
+                            <img src="assets/images/collections/image 27.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                                <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                                <h5 class="card-title">Outfits</h5>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-5">
-                    <a href="real-wed.html">
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
                         <div class="card">
-                            <img src="assets/images/experience/image 21.png" class="card-img-top" alt="...">
+                            <img src="assets/images/collections/image 28.png" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                                <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                                <h5 class="card-title">Blouse Designs</h5>
                             </div>
                         </div>
                     </a>
                 </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 29.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedding Sarees</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 26.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bridal Lehenga</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 27.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Outfits</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 28.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blouse Designs</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 29.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedding Sarees</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 26.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bridal Lehenga</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 27.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Outfits</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 28.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blouse Designs</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-5">
+                    <a href="collection.html">
+                        <div class="card">
+                            <img src="assets/images/collections/image 29.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedding Sarees</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <a href="collection.html"><button class="btn-trans mt-5">Explore More Collection</button></a>
+        </div>
+
+        <!-- Vendors -->
+        <div class="container-fluid text-center my-5 px-3 py-5 vendors-div">
+            <div class="section-title text-center">
+                <h2 class="title">Featured Vendors</h2>
+                <p class="sub-title">Discover Top-Rated Wedding Service Providers!</p>
+            </div>
+            <div class="row slider1 mx-4">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 30.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 31.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 32.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 30.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 31.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 32.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 30.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 31.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="assets/images/vendors/image 32.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                            <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            <a class="outline" href="wed-trend-detail.html">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="vendors.html"><button class="btn-trans mt-5">Find Your Perfect Vendor Now</button></a>
+        </div>
+
+        <!-- Blog -->
+        <div class="container-fluid text-center mb-5 p-5 blog-div">
+            <div class="section-title text-center pb-3">
+                <h2 class="title">Latest Blogs</h2>
+                <p class="sub-title">Stay Updated with the Latest Wedding Tips and Trends!</p>
             </div>
             <div class="row">
-                <div class="col-lg-5">
-                    <a href="real-wed.html">
-                        <div class="card">
-                            <img src="assets/images/experience/image 20.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                                <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-5">
-                    <a href="real-wed.html">
-                        <div class="card">
-                            <img src="assets/images/experience/image 25.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                                <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Collections -->
-    <div class="container text-center my-5 py-5 collections-div">
-        <div class="section-title text-center">
-            <h2 class="title">Picture Collection to Explore</h2>
-            <p class="sub-title">Get Inspired with Stunning Wedding Photography!</p>
-        </div>
-        <div class="row slider3">
-            <div class="col-lg-3 mt-5 mt-5">
-                <a href="collection.html"></a>
-                <div class="card">
-                    <img src="assets/images/collections/image 26.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Bridal Lehenga</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 27.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Outfits</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 28.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Blouse Designs</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 29.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Sarees</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 26.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bridal Lehenga</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 27.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Outfits</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 28.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Blouse Designs</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 29.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Sarees</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 26.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Bridal Lehenga</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 27.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Outfits</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 28.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Blouse Designs</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-3 mt-5">
-                <a href="collection.html">
-                    <div class="card">
-                        <img src="assets/images/collections/image 29.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Wedding Sarees</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-        <a href="collection.html"><button class="btn-trans mt-5">Explore More Collection</button></a>
-    </div>
-
-    <!-- Vendors -->
-    <div class="container-fluid text-center my-5 px-3 py-5 vendors-div">
-        <div class="section-title text-center">
-            <h2 class="title">Featured Vendors</h2>
-            <p class="sub-title">Discover Top-Rated Wedding Service Providers!</p>
-        </div>
-        <div class="row slider1 mx-4">
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 30.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 31.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 32.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 30.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 31.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 32.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 30.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 31.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card">
-                    <img src="assets/images/vendors/image 32.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
-                        <a class="outline" href="wed-trend-detail.html">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="vendors.html"><button class="btn-trans mt-5">Find Your Perfect Vendor Now</button></a>
-    </div>
-
-    <!-- Blog -->
-    <div class="container-fluid text-center mb-5 p-5 blog-div">
-        <div class="section-title text-center pb-3">
-            <h2 class="title">Latest Blogs</h2>
-            <p class="sub-title">Stay Updated with the Latest Wedding Tips and Trends!</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card mb-3">
-                    <img src="assets/images/blog/image 33.png" class="card-img-top" alt="...">
-                    <div class="card-body px-0 py-2">
-                        <span class="mb-2">21 May, 2024</span>
-                        <h2 class="card-title">Card title</h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                        <div class="d-flex align-items-center">
-                            <a class="outline" href="blogs.html">Read More<i
-                                    class="fa-solid fa-arrow-right-long ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="row">
+                <div class="col-lg-6">
                     <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="assets/images/blog/image 34.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <span class="mb-2">21 May, 2024</span>
-                                    <h2 class="card-title">Card title</h2>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <a class="outline" href="blogs.html">Read More<i
-                                            class="fa-solid fa-arrow-right-long ms-2"></i></a>
-                                </div>
+                        <img src="assets/images/blog/image 33.png" class="card-img-top" alt="...">
+                        <div class="card-body px-0 py-2">
+                            <span class="mb-2">21 May, 2024</span>
+                            <h2 class="card-title">Card title</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <div class="d-flex align-items-center">
+                                <a class="outline" href="blogs.html">Read More<i
+                                        class="fa-solid fa-arrow-right-long ms-2"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="assets/images/blog/image 35.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <span class="mb-2">21 May, 2024</span>
-                                    <h2 class="card-title">Card title</h2>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <a class="outline" href="blogs.html">Read More<i
-                                            class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img src="assets/images/blog/image 34.png" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <span class="mb-2">21 May, 2024</span>
+                                        <h2 class="card-title">Card title</h2>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                        <a class="outline" href="blogs.html">Read More<i
+                                                class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="card mb-3 h-75">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="assets/images/blog/image 36.png" class="img-fluid rounded-start" alt="...">
+                    <div class="row">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img src="assets/images/blog/image 35.png" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <span class="mb-2">21 May, 2024</span>
+                                        <h2 class="card-title">Card title</h2>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                        <a class="outline" href="blogs.html">Read More<i
+                                                class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <span class="mb-2">21 May, 2024</span>
-                                    <h2 class="card-title">Card title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Odit, omnis.</p>
-                                    <a class="outline" href="blogs.html">Read More<i
-                                            class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card mb-3 h-75">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img src="assets/images/blog/image 36.png" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <span class="mb-2">21 May, 2024</span>
+                                        <h2 class="card-title">Card title</h2>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Odit, omnis.</p>
+                                        <a class="outline" href="blogs.html">Read More<i
+                                                class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <a href="blogs.html"><button class="btn-trans mt-5">Read More Blog</button></a>
         </div>
-        <a href="blogs.html"><button class="btn-trans mt-5">Read More Blog</button></a>
-    </div>
     </div>
 
     <!-- Footer -->
@@ -961,39 +1018,46 @@
                         elit</span>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <h5>Follow us on:</h5>
-                <ul class="p-0">
-                    <li><a href="">
-                            <div class="v-img-div"><img class="v-img" src="assets/images/vectors/v-facebook.png" alt="">
-                            </div><span>Facebook</span>
-                        </a></li>
-                    <li><a href="">
-                            <div class="v-img-div"><img class="v-img" src="assets/images/vectors/v-twitter.png" alt="">
-                            </div><span>Twitter</span>
-                        </a></li>
-                    <li><a href="">
-                            <div class="v-img-div"><img class="v-img" src="assets/images/vectors/v-pinterest.png"
-                                    alt=""></div><span>Pinterest</span>
-                        </a></li>
-                    <li><a href="">
-                            <div class="v-img-div"><img class="v-img" src="assets/images/vectors/v-instagram.png"
-                                    alt=""></div><span>Instagram</span>
-                        </a></li>
-                </ul>
+            <div class="col-lg-7 my-3">
+                <div class="float-start">
+                    <h5>Follow us on:</h5>
+                    <ul class="p-0">
+                        <li><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/vectors/v-facebook.png"
+                                        alt="">
+                                </div><span>Facebook</span>
+                            </a></li>
+                        <li><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/vectors/v-twitter.png"
+                                        alt="">
+                                </div><span>Twitter</span>
+                            </a></li>
+                        <li><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/vectors/v-pinterest.png"
+                                        alt=""></div><span>Pinterest</span>
+                            </a></li>
+                        <li><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/vectors/v-instagram.png"
+                                        alt=""></div><span>Instagram</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="float-end">
+                    <h5>Get The MarriageBazaar</h5>
+                    <ul class="p-0">
+                        <li><img class="get-img" src="assets/images/vectors/apple-app-store-logo.jpg" alt=""></li>
+                        <li><img class="get-img" src="assets/images/vectors/get_in_on_google.png" alt=""></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-lg-3" align="right">
-                <h5>Get The MarriageBazaar</h5>
-                <ul class="p-0">
-                    <li><img class="get-img" src="assets/images/vectors/apple-app-store-logo.jpg" alt=""></li>
-                    <li><img class="get-img" src="assets/images/vectors/get_in_on_google.png" alt=""></li>
-                </ul>
-            </div>
+            <!-- <div class="col-lg-3" align="right">
+                
+            </div> -->
         </div>
         <div class="footer-lower row py-2">
             <div class="row">
                 <div class="col">
-                    <h5>Start Planning</h5>
+                    <h5 class="fw-semibold">Start Planning</h5>
                     <ul class="p-0">
                         <li><a href="">Search By Vendor</a></li>
                         <li><a href="">Search By City</a></li>
@@ -1003,7 +1067,7 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <h5>Wedding Ideas</h5>
+                    <h5 class="fw-semibold">Wedding Ideas</h5>
                     <ul class="p-0">
                         <li><a href="">Wedding Blog</a></li>
                         <li><a href="">Wedding Inspiration Gallery</a></li>
@@ -1012,7 +1076,7 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <h5>Photo Gallery</h5>
+                    <h5 class="fw-semibold">Photo Gallery</h5>
                     <ul class="p-0">
                         <li><a href="">Bridal Wear</a></li>
                         <li><a href="">Wedding Jewellery</a></li>
@@ -1026,7 +1090,7 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <h5>Home</h5>
+                    <h5 class="fw-semibold">Home</h5>
                     <ul class="p-0">
                         <li><a href="">About MarriageBazaar</a></li>
                         <li><a href="">Careers</a></li>
@@ -1038,7 +1102,7 @@
                     </ul>
                 </div>
                 <div class="col">
-                    <h5>Wedding Invitation Maker</h5>
+                    <h5 class="fw-semibold">Wedding Invitation Maker</h5>
                     <ul class="p-0">
                         <li><a href="">Wedding Card Designs</a></li>
                         <li><a href="">Save the Date Temolates</a></li>

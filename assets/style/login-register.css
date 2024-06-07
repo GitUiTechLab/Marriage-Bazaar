@@ -4,30 +4,51 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-
+    /* background-color: var(--color-primary10); */
 }
 
 .login .left {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 50%;
+    /* width: 50%; */
+    background-color: white;
 }
 
 .login .left form {
     position: relative;
-    background-color: var(--color-primary9);
     padding: 2rem;
     border-radius: 10px;
     width: 80%;
 }
 
-.login .left form input {
-    border: none;
+.login .left form .input-div  {
+    border: 1px solid rgba(128, 128, 128, 0.3);
     padding: 12px;
     margin: 5px auto;
     border-radius: 8px;
     width: 100%;
+}
+
+.login .left form input, .drop-down{
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 12px;
+    margin: 5px auto;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.login .left form input:focus{
+    border: 1px solid var(--color-primary5);
+    outline: none;
+}
+
+.login .left form .input-div input{
+    border: none;
+    border-radius: 0;
+    border-left: 1px solid rgba(128, 128, 128, 0.4);
+    width: 90%;
+    padding: 0;
 }
 
 .field-icon {
@@ -40,14 +61,10 @@
 }
 
 .login .left form .btn-trans{
-    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.4);
     background-color: white;
     margin: 5px;
-}
-
-
-.login .right {
-    width: 50%;
+    padding: 1rem;
 }
 
 .login .right img {

@@ -5,7 +5,23 @@ $('.slider1').slick({
   slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 2000,
-  infinity: true
+  infinity: true,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 $('.slider2').slick({
@@ -14,7 +30,23 @@ $('.slider2').slick({
   slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 2000,
-  infinity: true
+  infinity: true,
+  responsive: [
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 $('.slider3').slick({
@@ -24,7 +56,30 @@ $('.slider3').slick({
   slidesToScroll: 4,
   autoplay: true,
   autoplaySpeed: 2000,
-  infinity: true
+  infinity: true,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 $('.slider4').slick({
@@ -152,59 +207,59 @@ function close_div() {
 
 // Dropdown
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const dropdowns = document.querySelectorAll('.dropdown');
 
   dropdowns.forEach(dropdown => {
-      const dropdownItems = dropdown.querySelectorAll('.dropdown-item');
-      const dropNameSpan = dropdown.querySelector('.drop-name');
+    const dropdownItems = dropdown.querySelectorAll('.dropdown-item');
+    const dropNameSpan = dropdown.querySelector('.drop-name');
 
-      dropdownItems.forEach(item => {
-          item.addEventListener('click', function(event) {
-              event.preventDefault();  
-              dropNameSpan.textContent = this.textContent;
-          });
+    dropdownItems.forEach(item => {
+      item.addEventListener('click', function (event) {
+        event.preventDefault();
+        dropNameSpan.textContent = this.textContent;
       });
+    });
   });
 });
 
 // Searchbar
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const searchInput = document.getElementById('searchInput');
 
-  searchInput.addEventListener('keypress', function(event) {
-      if (event.key === 'Enter') {
-          handleSearch();
-      }
+  searchInput.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
   });
 
   function handleSearch() {
-      const query = searchInput.value.trim().toLowerCase();
+    const query = searchInput.value.trim().toLowerCase();
 
-      if (query === 'venue') {
-          window.location.href = 'venue.html';
-      } else if (query === 'vendor') {
-          window.location.href = 'vendors.html';
-      } else if (query === 'trend') {
-          window.location.href = 'wed-trends.html';
-      } else if (query === 'theme') {
-          window.location.href = 'wed-theme.html';
-      } else if (query === 'collection'  || query === 'photos') {
-          window.location.href = 'collection.html';
-      } else if (query === 'blog') {
-          window.location.href = 'blogs.html';
-      } else if (query === 'service') {
-          window.location.href = 'services.html';
-      } else {
-          alert('No results found for: ' + query);
-      }
+    if (query === 'venue') {
+      window.location.href = 'venue.html';
+    } else if (query === 'vendor') {
+      window.location.href = 'vendors.html';
+    } else if (query === 'trend') {
+      window.location.href = 'wed-trends.html';
+    } else if (query === 'theme') {
+      window.location.href = 'wed-theme.html';
+    } else if (query === 'collection' || query === 'photos') {
+      window.location.href = 'collection.html';
+    } else if (query === 'blog') {
+      window.location.href = 'blogs.html';
+    } else if (query === 'service') {
+      window.location.href = 'services.html';
+    } else {
+      alert('No results found for: ' + query);
+    }
   }
 });
 
 // password
 
-$(".toggle-password").click(function() {
+$(".toggle-password").click(function () {
 
   $(this).toggleClass("fa-eye fa-eye-slash");
   var input = $($(this).attr("toggle"));
@@ -213,4 +268,15 @@ $(".toggle-password").click(function() {
   } else {
     input.attr("type", "password");
   }
+});
+
+// add reviews
+
+$(document).on('click', '.modal-trigger', function() {
+  var modalId = $(this).data('modal-id');
+  $('#' + modalId).addClass('model-open');
+});
+
+$(document).on('click', '.close-btn, .bg-overlay', function() {
+  $(this).closest('.custom-model-main').removeClass('model-open');
 });
