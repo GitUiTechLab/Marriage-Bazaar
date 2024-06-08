@@ -270,13 +270,84 @@ $(".toggle-password").click(function () {
   }
 });
 
-// add reviews
+// add images in submit-wed2 page
 
-$(document).on('click', '.modal-trigger', function() {
-  var modalId = $(this).data('modal-id');
-  $('#' + modalId).addClass('model-open');
+jQuery(document).ready(function () {
+  ImgUpload();
 });
 
-$(document).on('click', '.close-btn, .bg-overlay', function() {
-  $(this).closest('.custom-model-main').removeClass('model-open');
+function ImgUpload() {
+  var imgArray = [];
+
+  $('.upload__inputfile').each(function () {
+    $(this).on('change', function (e) {
+      var imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+      var maxLength = $(this).attr('data-max_length');
+
+      var files = e.target.files;
+      var filesArr = Array.prototype.slice.call(files);
+
+      filesArr.forEach(function (f, index) {
+        if (!f.type.match('image.*')) {
+          return;
+        }
+
+        if (imgArray.length >= maxLength) {
+          return false;
+        } else {
+          var len = 0;
+          for (var i = 0; i < imgArray.length; i++) {
+            if (imgArray[i] !== undefined) {
+              len++;
+            }
+          }
+          if (len >= maxLength) {
+            return false;
+          } else {
+            imgArray.push(f);
+
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+              imgWrap.append(html);
+            }
+            reader.readAsDataURL(f);
+          }
+        }
+      });
+    });
+  });
+
+  $('body').on('click', ".upload__img-close", function (e) {
+    var file = $(this).parent().data("file");
+    for (var i = 0; i < imgArray.length; i++) {
+      if (imgArray[i].name === file) {
+        imgArray.splice(i, 1);
+        break;
+      }
+    }
+    $(this).parent().parent().remove();
+  });
+}
+
+// add reviews in submit-wed3 page
+
+jQuery(document).ready(function () {
+  $('.modal-trigger').on('click', function () {
+    var modalId = $(this).data('modal-id');
+    $('#' + modalId).addClass('model-open');
+  });
+
+  $('.close-btn, .bg-overlay').on('click', function () {
+    $(this).closest('.custom-model-main').removeClass('model-open');
+  });
+
+
+  $('.modal-submit').on('click', function () {
+    var inputId = $(this).data('input-id');
+    var modalId = $(this).closest('.custom-model-main').attr('id');
+    var text = $('#' + modalId).find('textarea').val();
+    $('#' + inputId).val(text);
+    $('#' + modalId).removeClass('model-open');
+  });
 });

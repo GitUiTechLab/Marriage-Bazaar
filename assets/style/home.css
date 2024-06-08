@@ -6,6 +6,8 @@
 
 .banner-content {
     position: relative;
+    height: 62vh;
+    background: url(../images/banner/banner-bg.png) center center/cover;
 }
 
 .banner-content .banner-bg {
@@ -43,7 +45,7 @@
     width: 50%;
 }
 
-.banner-lower .drop-vendors{
+.banner-lower .drop-vendors {
     border-radius: 4px 0 0 4px;
 }
 
@@ -62,8 +64,34 @@
     .banner-text {
         width: 80%;
     }
+
     .banner-lower {
         width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner-text p {
+        font-size: 25px;
+    }
+    .banner-content {
+        height: 100vh;
+    }
+
+    .banner-lower {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .banner-lower .drop-vendors,
+    .banner-lower .drop-location {
+        width: 100%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 899){
+    .banner-text p {
+        font-size: 22px;
     }
 }
 
@@ -78,7 +106,7 @@
     padding: 22px;
     border-radius: 8px;
     line-height: 30px;
-    
+
 }
 
 .venue-cards img {
@@ -123,7 +151,7 @@
 
 /* wed-themes */
 
-.wed-theme-div .card{
+.wed-theme-div .card {
     width: 90%;
     border: 1px solid #F3F3F3;
 }
@@ -174,11 +202,12 @@
     color: var(--heading-color2);
     font-size: 30px;
 }
-.services-div .col-lg-7{
+
+.services-div .col-lg-7 {
     position: relative;
 }
 
-.services-div .bg-pink{
+.services-div .bg-pink {
     overflow: hidden;
 }
 
@@ -190,9 +219,9 @@
     border-left: 15rem solid white;
     border-bottom: 15.8rem solid transparent;
     z-index: 2;
-  }
+}
 
-.services-div .slider2{
+.services-div .slider2 {
     z-index: 3;
 }
 
@@ -217,6 +246,29 @@
     height: 70%;
     left: 72%;
     width: 20vw;
+}
+
+@media (max-width: 900px){
+    .experiences-div .card-body {
+        height: 70%;
+        left: 62%;
+        width: 30vw;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 700px){
+    .experiences-div img {
+        left: -10%;
+        width: 200px;
+    }
+    .experiences-div .card-body {
+        height: 70%;
+        left: 62%;
+        width: 30vw;
+    }
+    .experiences-div .card-body p {
+        display: none;
+    }
 }
 
 /* collections-div */
@@ -245,7 +297,7 @@
 
 .collections-div .card-body {
     position: absolute;
-    width: 100%; 
+    width: 100%;
     bottom: 0px;
 }
 
@@ -302,5 +354,3 @@
     color: var(--color-primary4);
     padding-top: 2px;
 }
-
-

@@ -2,10 +2,14 @@
 
 /* imgs-roll */
 
+.imgs-roll {
+    justify-content: center;
+}
+
 .imgs-roll img {
     border-radius: 4px;
     height: 152px;
-    width: 196px;
+    width: 185px;
     padding-bottom: 15px;
     cursor: pointer;
 }
@@ -69,7 +73,7 @@
 .venue-container .card-text img {
     height: .9rem;
     width: .9rem;
-    
+
 }
 
 .venue-container .price {
@@ -88,13 +92,12 @@
     background-color: var(--heading-color4);
 }
 
-.brb-gray {
-    border-bottom: 2px solid gray;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.brb-gray-light {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+@media (min-width: 300px) and (max-width: 800px) {
+    .venue-container .form-inputs {
+        position: relative;
+        left: 0;
+        width: 100%;
+    }
 }
 
 /* review-div */
@@ -138,6 +141,13 @@
     padding-left: 8%;
     /* width: 100%; */
     height: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .review .div2 {
+        left: 0;
+        position: relative;
+    }
 }
 
 /* pagination */
@@ -203,35 +213,6 @@
 
 .detail-content button {
     margin: 7%;
-}
-
-.detail-content .round {
-    position: relative;
-}
-
-.detail-content .round label {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 45px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 45px;
-}
-
-.detail-content .round input[type="checkbox"] {
-    visibility: hidden;
-}
-
-.detail-content .round input[type="checkbox"]:checked+label {
-    background-color: var(--color-primary5);
-    border-color: var(--heading-color4);
-}
-
-.detail-content .round input[type="checkbox"]:checked+label:after {
-    opacity: 1;
 }
 
 .checkbox {
@@ -301,3 +282,14 @@
     width: 100%;
 }
 
+@media (min-width: 300px) and (max-width: 800px) {
+
+    .detail-left,
+    .detail-right {
+        width: 100%;
+        margin: 0 !important;
+    }
+    .detail-right{
+        margin-top: 2rem !important;
+    }
+}

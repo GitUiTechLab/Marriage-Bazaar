@@ -344,7 +344,7 @@
                         <input class="border border-2 rounded w-100 p-3 my-2" type="number" name="no-of-guest"
                             id="no-of-guest" placeholder="No of Rooms">
                         <div class="row my-3 ms-2">
-                            <div class="col border-end border-2 p-2 ">
+                            <!-- <div class="col border-end border-2 p-2 ">
                                 <span class="fw-semibold mb-4 fs-5">Function Type</span>
                                 <div class="row">
                                     <div class="col p-0">
@@ -380,6 +380,30 @@
                                             <span class="ms-5 py-3">Day</span>
                                         </div>
                                     </div>
+                                </div>
+                            </div> -->
+                            <div class="col border-end border-2 p-2">
+                                <p class="fw-semibold mb-4 fs-5">Function Type</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input fs-3" type="radio" name="Function-Type"
+                                        id="Pre-Wedding" checked>
+                                    <label class="form-check-label py-1 my-1" for="Pre-Wedding">Pre-Wedding</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input fs-3" type="radio" name="Function-Type" id="Wedding">
+                                    <label class="form-check-label py-1 my-1" for="Wedding">Wedding</label>
+                                </div>
+                            </div>
+                            <div class="col p-2">
+                                <p class="fw-semibold mb-4 fs-5">Function Time</p>
+                                <div class="form-check form-check-inline ms-3">
+                                    <input class="form-check-input fs-3" type="radio" name="Function-Time"
+                                        id="Evening" checked>
+                                    <label class="form-check-label py-1 my-1" for="Evening">Evening</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input fs-3" type="radio" name="Function-Time" id="Day">
+                                    <label class="form-check-label py-1 my-1" for="Day">Day</label>
                                 </div>
                             </div>
                         </div>

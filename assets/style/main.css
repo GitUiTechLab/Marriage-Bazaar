@@ -89,6 +89,7 @@ header {
     height: 28px;
     background-color: white;
     border-radius: 4px;
+    margin-top: 5px;
 }
 
 .upper-header .contents .drop-cities ul {
@@ -118,6 +119,18 @@ header {
 .user-penal span a:hover {
     background-color: var(--color-primary9);
     border-radius: 5px;
+}
+
+@media (max-width: 900px){
+    .user-penal span {
+        left: 75vw;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 700px){
+    .user-penal span {
+        left: 90vw;
+    }
 }
 
 /* nav-header */
@@ -371,13 +384,6 @@ header {
     color: #247CA8;
 }
 
-/**********************
-        Borders 
-***********************/
-
-.br-dashed {
-    border-bottom: 2px dashed gray;
-}
 
 /**********************
         Cards 
@@ -397,9 +403,47 @@ header {
         Borders 
 ************************/
 
+.br-dashed {
+    border-bottom: 2px dashed gray;
+}
+
 .brb-pink {
     border-bottom: 2px solid var(--color-primary5);
 }
+
+.brb-gray {
+    border-bottom: 2px solid gray;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.brb-gray-light {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+/***********************
+        Radio btn 
+************************/
+
+.form-check-input{
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-primary5);
+    border-color: var(--color-primary5);
+}
+
+/***********************
+       detail-review
+************************/
+
+
+@media (min-width:300px) and (max-width:600px){
+    .detail-review{
+        margin: 0 !important;
+    }
+}
+
 
 /* FAQs */
 
