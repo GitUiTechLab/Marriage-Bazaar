@@ -225,36 +225,56 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Searchbar
 
-document.addEventListener('DOMContentLoaded', function () {
-  const searchInput = document.getElementById('searchInput');
+const suggestions = [
+  { name: "venues", url: "venue.html" },
+  { name: "vendors", url: "vendors.html" },
+  { name: "trends", url: "wed-trends.html" },
+  { name: "themes", url: "wed-themes.html" },
+  { name: "collection", url: "collections.html" },
+  { name: "photos", url: "collections.html" },
+  { name: "blogs", url: "blogs.html" },
+  { name: "services", url: "services.html" },
+  { name: "invitations", url: "e-invites.html" }
+];
 
-  searchInput.addEventListener('keypress', function (event) {
-    if (event.key === 'Enter') {
-      handleSearch();
-    }
+document.addEventListener("DOMContentLoaded", function() {
+  const input = document.getElementById("searchInput");
+
+  input.addEventListener("input", function() {
+      const val = this.value;
+      closeAllLists();
+      if (!val) return false;
+      const list = document.createElement("div");
+      list.setAttribute("id", this.id + "-autocomplete-list");
+      list.setAttribute("class", "autocomplete-items");
+      this.parentNode.appendChild(list);
+      for (let i = 0; i < suggestions.length; i++) {
+          if (suggestions[i].name.substr(0, val.length).toUpperCase() === val.toUpperCase()) {
+              const item = document.createElement("div");
+              item.innerHTML = "<strong>" + suggestions[i].name.substr(0, val.length) + "</strong>";
+              item.innerHTML += suggestions[i].name.substr(val.length);
+              item.innerHTML += "<input type='hidden' value='" + suggestions[i].name + "'>";
+              item.setAttribute("data-url", suggestions[i].url);
+              item.addEventListener("click", function() {
+                  window.location.href = this.getAttribute("data-url");
+              });
+              list.appendChild(item);
+          }
+      }
   });
 
-  function handleSearch() {
-    const query = searchInput.value.trim().toLowerCase();
-
-    if (query === 'venue') {
-      window.location.href = 'venue.html';
-    } else if (query === 'vendor') {
-      window.location.href = 'vendors.html';
-    } else if (query === 'trend') {
-      window.location.href = 'wed-trends.html';
-    } else if (query === 'theme') {
-      window.location.href = 'wed-theme.html';
-    } else if (query === 'collection' || query === 'photos') {
-      window.location.href = 'collection.html';
-    } else if (query === 'blog') {
-      window.location.href = 'blogs.html';
-    } else if (query === 'service') {
-      window.location.href = 'services.html';
-    } else {
-      alert('No results found for: ' + query);
-    }
+  function closeAllLists(elmnt) {
+      const items = document.getElementsByClassName("autocomplete-items");
+      for (let i = 0; i < items.length; i++) {
+          if (elmnt !== items[i] && elmnt !== input) {
+              items[i].parentNode.removeChild(items[i]);
+          }
+      }
   }
+
+  document.addEventListener("click", function(e) {
+      closeAllLists(e.target);
+  });
 });
 
 // password
