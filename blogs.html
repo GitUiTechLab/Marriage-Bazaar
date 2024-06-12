@@ -30,9 +30,9 @@
 
 <body>
     <div class="main-wrapper">
-        <Header class="wed-header container-fluid">
-            <div class="upper-header row align-items-center ">
-                <div class="contents">
+        <Header class="wed-header container-fluid p-0">
+            <div class="upper-header align-items-center ">
+                <div class="contents container-fluid">
                     <div class="drop-cities">
                         <ul>
                             <li class="nav-item dropdown row">
@@ -56,45 +56,67 @@
                         </ul>
                     </div>
                     <div class="user-penal">
-                        <div class="quote-icon quote-user d-flex d-none d-md-flex flex-row">
-                            <span><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1" href="login.html">Login
-                                </a>/ <a class="px-1 mx-1" href="register.html">Register</a> </span>
+                        <div class="quote-icon quote-user d-flex d-none d-md-flex">
+                            <span><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1"
+                                    href="signin-signup.html">Sign In/Sign Up</a></span>
                         </div>
-                        <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
-                            <a class="white-box-icon" href="login.html"><i class="fa-regular fa-user"></i></a>
+                        <div class="quote-icon quote-user d-block d-md-none">
+                            <span><a href="login.html"><i class="fa-regular fa-user"></i></a></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="nav-header row align-items-center">
-                <div class="col-lg-10 d-none d-xl-block ">
-                    <nav class="mainmenu-nav d-none d-lg-block">
-                        <ul class="mainmenu">
-                            <li class="logo"><a href="home.html">
-                                    <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
-                                </a></li>
-                            <li class="nav-link"><a class="outline" href="venue.html">Venues</a></li>
-                            <li class="nav-link"><a class="outline" href="vendors.html">Vendors</a></li>
-                            <li class="nav-link"><a class="outline" href="wed-trends.html">Trends</a></li>
-                            <li class="nav-link"><a class="outline" href="wed-theme.html">Themes</a></li>
-                            <li class="nav-link"><a class="outline" href="services.html">Services</a></li>
-                            <li class="nav-link"><a class="outline" href="collection.html">Photos</a></li>
-                            <li class="nav-link"><a class="outline" href="real-wed.html">Real Weddings</a></li>
-                            <li class="nav-link active"><a class="" href="blogs.html">Blog</a></li>
-                            <li class="nav-link"><a class="outline" href="shop.html">Shop</a></li>
-                            <li class="nav-link"><a class="outline" href="e-invites.html">E-Invites</a></li>
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="p-0" href="home.html">
+                        <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="venue.html">Venues</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="vendors.html">Vendors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-trends.html">Trends</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-theme.html">Themes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="collection.html">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="real-wed.html">Real Weddings</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="blogs.html">Blog</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="shop.html">Shop</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="e-invites.html">E-Invites</a>
+                            </li>
+
                         </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-2 pb-2 float-end">
-                    <div class="header-menu-bar ">
-                        <div class="d-flex form-inputs">
-                            <i class="fa-solid fa-magnifying-glass ms-3"></i>
-                            <input id="searchInput" class="form-control ps-5" type="text" placeholder="Search for...">
+                        <div class="form-group fg--search my-3">
+                            <input id="searchInput" type="text" class="input" placeholder="Search for...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </Header>
 
         <div class="container-fluid p-5 blogs">
@@ -140,7 +162,7 @@
             </div>
         </div>
 
-        <div class="container bg-pink text-center px-5 mb-5">
+        <div class="container bg-pink text-center mb-5">
             <div class="py-4">
                 <h3 class="text-center fw-semibold py-1">Find the best wedding vendors with thousands of trusted reviews
                 </h3>
@@ -163,7 +185,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="https://wa.me/9999999999"><button class="btn-pink m-4" type="submit"><img
+                <a href="https://wa.me/9999999999"><button class="btn-pink my-4" type="submit"><img
                             src="assets/images/icons/phone-white.png" alt="">View Contact</button></a>
                 <div>
                     <a href=""><img class="mx-4" src="assets/images/icons/fb-pink.png" alt=""></a>
@@ -177,17 +199,17 @@
             <h2 class="text-center fw-semibold py-1">Tage</h2>
             <div class="tage text-center p-4">
                 <h3 class="py-1">View More Ideas</h3>
-                <a href="collection.html"><button class="btn-pink m-4" type="submit">Take me to Gallery</button></a>
+                <a href="collection.html"><button class="btn-pink my-4" type="submit">Take me to Gallery</button></a>
             </div>
         </div>
 
         <div class="container mb-5">
             <h2 class="text-center fw-semibold p-3">Browse our Guides</h2>
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="d-flex flex-wrap justify-content-around">
+                <div>
                     <a href="guide.html">
                         <div class="card p-3">
-                            <img src="assets/images/guide/g1.png" alt="...">
+                            <img class="px-2" src="assets/images/guide/g1.png" alt="...">
                             <div class="card-body fs-5 fw-semibold">
                                 <h5 class="card-title">Decor Guide</h5>
                                 <a class="outline color-pink" href="guide.html" class="btn btn-primary">Explore</a>
@@ -195,10 +217,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-3">
+                <div>
                     <a href="guide.html">
                         <div class="card p-3">
-                            <img src="assets/images/guide/g2.png" alt="...">
+                            <img class="px-2" src="assets/images/guide/g2.png" alt="...">
                             <div class="card-body fs-5 fw-semibold">
                                 <h5 class="card-title">Decor Guide</h5>
                                 <a class="outline color-pink" href="guide.html" class="btn btn-primary">Explore</a>
@@ -206,10 +228,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-3">
+                <div>
                     <a href="guide.html">
                         <div class="card p-3">
-                            <img src="assets/images/guide/g3.png" alt="...">
+                            <img class="px-2" src="assets/images/guide/g3.png" alt="...">
                             <div class="card-body fs-5 fw-semibold">
                                 <h5 class="card-title">Decor Guide</h5>
                                 <a class="outline color-pink" href="guide.html" class="btn btn-primary">Explore</a>
@@ -217,10 +239,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-3">
+                <div>
                     <a href="guide.html">
                         <div class="card p-3">
-                            <img src="assets/images/guide/g4.png" alt="...">
+                            <img class="px-2" src="assets/images/guide/g4.png" alt="...">
                             <div class="card-body fs-5 fw-semibold">
                                 <h5 class="card-title">Decor Guide</h5>
                                 <a class="outline color-pink" href="guide.html" class="btn btn-primary">Explore</a>
@@ -235,12 +257,12 @@
             <div class="border-bottom border-2 border-black py-4">
                 <h3 class="text-center fw-semibold py-1">Winter Wonderiand Decor Ideas that Caught
                     Out Eye!</h3>
-                <a href="submit-wed1.html"><button class="btn-pink m-4" type="submit">Submit Wedding</button></a>
+                <a href="submit-wed1.html"><button class="btn-pink my-4" type="submit">Submit Wedding</button></a>
             </div>
             <div class="py-4">
                 <h3 class="text-center fw-semibold py-1">Get more wedding ideas in your inbox</h3>
-                <input class="btn-trans text-center" type="email" name="" id="" placeholder="Enter your email"><br>
-                <a href=""><button class="btn-pink m-4 w-25">I want More</button></a>
+                <input class="btn-trans text-center p-3" type="email" name="" id="" placeholder="Enter your email"><br>
+                <a href=""><button class="btn-pink my-4 px-5">I want More</button></a>
             </div>
         </div>
 
@@ -248,16 +270,16 @@
             <h3 class="fw-semibold py-1">More Inspiration on Instagram</h3>
             <h4 class="fw-semibold py-1">@Marriage_Bazaar</h4>
             <div class="d-flex flex-wrap justify-content-center">
-                <img src="assets/images/insta/insta1.png" alt="">
-                <img src="assets/images/insta/insta2.png" alt="">
-                <img src="assets/images/insta/insta3.png" alt="">
-                <img src="assets/images/insta/insta4.png" alt="">
-                <img src="assets/images/insta/insta5.png" alt="">
-                <img src="assets/images/insta/insta6.png" alt="">
-                <img src="assets/images/insta/insta7.png" alt="">
-                <img src="assets/images/insta/insta8.png" alt="">
+                <img class="m-1" src="assets/images/insta/insta1.png" alt="">
+                <img class="m-1" src="assets/images/insta/insta2.png" alt="">
+                <img class="m-1" src="assets/images/insta/insta3.png" alt="">
+                <img class="m-1" src="assets/images/insta/insta4.png" alt="">
+                <img class="m-1" src="assets/images/insta/insta5.png" alt="">
+                <img class="m-1" src="assets/images/insta/insta6.png" alt="">
+                <img class="m-1" src="assets/images/insta/insta7.png" alt="">
+                <img class="m-1" src="assets/images/insta/insta8.png" alt="">
             </div>
-            <a href=""><button class="btn-pink m-4 px-5">Follow</button></a>
+            <a href=""><button class="btn-pink my-4 px-5">Follow</button></a>
         </div>
 
     </div>

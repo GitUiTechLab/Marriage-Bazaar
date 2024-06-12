@@ -1,0 +1,12 @@
+@import "main.css"; 
+
+@media (min-width: 300px) and (max-width: 800px){
+    .custom .btn-trans{
+        font-size: .8rem !important;
+        margin: .2rem !important;
+        /* padding: .5rem !important; */
+    }
+    .custom img{
+        width: 90vw !important;
+    }
+}

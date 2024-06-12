@@ -27,9 +27,9 @@
 
 <body>
     <div class="main-wrapper">
-        <Header class="wed-header container-fluid">
-            <div class="upper-header row align-items-center ">
-                <div class="contents">
+        <Header class="wed-header container-fluid p-0">
+            <div class="upper-header align-items-center ">
+                <div class="contents container-fluid">
                     <div class="drop-cities">
                         <ul>
                             <li class="nav-item dropdown row">
@@ -57,41 +57,63 @@
                             <span><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1"
                                     href="signin-signup.html">Sign In/Sign Up</a></span>
                         </div>
-                        <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
-                            <a class="white-box-icon" href="login.html"><i class="fa-regular fa-user"></i></a>
+                        <div class="quote-icon quote-user d-block d-md-none">
+                            <span><a href="login.html"><i class="fa-regular fa-user"></i></a></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="nav-header row align-items-center">
-                <div class="col-lg-10 d-none d-xl-block ">
-                    <nav class="mainmenu-nav d-none d-lg-block">
-                        <ul class="mainmenu">
-                            <li class="logo"><a href="home.html">
-                                    <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
-                                </a></li>
-                            <li class="nav-link"><a class="outline" href="venue.html">Venues</a></li>
-                            <li class="nav-link"><a class="outline" href="vendors.html">Vendors</a></li>
-                            <li class="nav-link"><a class="outline" href="wed-trends.html">Trends</a></li>
-                            <li class="nav-link"><a class="outline" href="wed-theme.html">Themes</a></li>
-                            <li class="nav-link"><a class="outline" href="services.html">Services</a></li>
-                            <li class="nav-link"><a class="outline" href="collection.html">Photos</a></li>
-                            <li class="nav-link"><a class="outline" href="real-wed.html">Real Weddings</a></li>
-                            <li class="nav-link"><a class="outline" href="blogs.html">Blog</a></li>
-                            <li class="nav-link"><a class="outline" href="shop.html">Shop</a></li>
-                            <li class="nav-link"><a class="outline" href="e-invites.html">E-Invites</a></li>
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="p-0" href="home.html">
+                        <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="venue.html">Venues</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="vendors.html">Vendors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-trends.html">Trends</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-theme.html">Themes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="collection.html">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="real-wed.html">Real Weddings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="blogs.html">Blog</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="shop.html">Shop</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="e-invites.html">E-Invites</a>
+                            </li>
+
                         </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-2 pb-2 float-end">
-                    <div class="header-menu-bar ">
-                        <div class="d-flex form-inputs">
-                            <i class="fa-solid fa-magnifying-glass ms-3"></i>
-                            <input id="searchInput" class="form-control ps-5" type="text" placeholder="Search for...">
+                        <div class="form-group fg--search my-3">
+                            <input id="searchInput" type="text" class="input" placeholder="Search for...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </Header>
 
         <div class="container">
@@ -109,8 +131,8 @@
                 <h4>Add & Review Vendors</h4>
             </div>
             <form action="">
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input1"><span class="color-pink">*</span>Wedding Photographers</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal1" type="text" id="input1" name="input1"
@@ -130,7 +152,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input2"><span class="color-pink">*</span>Wedding Jewellery</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal2" type="text" id="input2" name="input2"
@@ -151,8 +173,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input3"><span class="color-pink">*</span>Bridal Makeup Artists</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal3" type="text" id="input3" name="input3"
@@ -172,7 +194,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input4"><span class="color-pink">*</span>Bridal Wear</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal4" type="text" id="input4" name="input4"
@@ -193,8 +215,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input5"><span class="color-pink">*</span>Groom Wear</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal5" type="text" id="input5" name="input5"
@@ -214,7 +236,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input6"><span class="color-pink">*</span>Wedding Decorators</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal6" type="text" id="input6" name="input6"
@@ -235,8 +257,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input7"><span class="color-pink">*</span>Wedding Catering</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal7" type="text" id="input7" name="input7"
@@ -256,7 +278,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input8"><span class="color-pink">*</span>Wedding Cards</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal8" type="text" id="input8" name="input8"
@@ -277,8 +299,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input9"><span class="color-pink">*</span>Wedding Cakes</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal9" type="text" id="input9" name="input9"
@@ -298,7 +320,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input10"><span class="color-pink">*</span>Wedding Venues</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal10" type="text" id="input10" name="input10"
@@ -320,8 +342,8 @@
                     </div>
 
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input11"><span class="color-pink">*</span>Wedding Videography</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal11" type="text" id="input11" name="input11"
@@ -341,7 +363,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input12"><span class="color-pink">*</span>Bridal Mehendi Artists</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal12" type="text" id="input12" name="input12"
@@ -363,8 +385,8 @@
                     </div>
 
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input13"><span class="color-pink">*</span>Trousseau Packers</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal13" type="text" id="input13" name="input13"
@@ -384,7 +406,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input14"><span class="color-pink">*</span>Sangeet Choreographers</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal14" type="text" id="input14" name="input14"
@@ -406,8 +428,8 @@
                     </div>
 
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input15"><span class="color-pink">*</span>Wedding Favors</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal15" type="text" id="input15" name="input15"
@@ -427,7 +449,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input16"><span class="color-pink">*</span>Wedding Planners</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal16" type="text" id="input16" name="input16"
@@ -449,8 +471,8 @@
                     </div>
                 </div>
 
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input17"><span class="color-pink">*</span>Wedding Accessories</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal17" type="text" id="input17" name="input17"
@@ -470,7 +492,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input18"><span class="color-pink">*</span>DJ</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal18" type="text" id="input18" name="input18"
@@ -491,8 +513,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input19"><span class="color-pink">*</span>Family Makeup</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal19" type="text" id="input19" name="input19"
@@ -512,7 +534,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input20"><span class="color-pink">*</span>Wedding Pandits/Priests</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal20" type="text" id="input20" name="input20"
@@ -533,8 +555,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input21"><span class="color-pink">*</span>Bartenders</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal21" type="text" id="input21" name="input21"
@@ -554,7 +576,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input22"><span class="color-pink">*</span>Wedding Entertainment</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal22" type="text" id="input22" name="input22"
@@ -575,8 +597,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input23"><span class="color-pink">*</span>Pre Wedding Photographers</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal23" type="text" id="input23" name="input23"
@@ -596,7 +618,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input24"><span class="color-pink">*</span>Home Wedding Decor</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal24" type="text" id="input24" name="input24"
@@ -617,8 +639,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row my-3">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-6 my-3">
                         <label for="input25"><span class="color-pink">*</span>Pre Wedding Shoot Locations</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal25" type="text" id="input25" name="input25"
@@ -638,7 +660,7 @@
                             <div class="bg-overlay"></div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 my-3">
                         <label for="input26"><span class="color-pink">*</span>Beauty and Wellness</label>
                         <span class="float-end"><i class="fa-solid fa-plus mx-2"></i>Add more</span>
                         <input class="modal-trigger" data-modal-id="modal26" type="text" id="input26" name="input26"

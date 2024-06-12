@@ -30,9 +30,9 @@
 
 <body>
     <div class="main-wrapper">
-        <Header class="wed-header container-fluid">
-            <div class="upper-header row align-items-center ">
-                <div class="contents">
+        <Header class="wed-header container-fluid p-0">
+            <div class="upper-header align-items-center ">
+                <div class="contents container-fluid">
                     <div class="drop-cities">
                         <ul>
                             <li class="nav-item dropdown row">
@@ -60,41 +60,63 @@
                             <span><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1"
                                     href="signin-signup.html">Sign In/Sign Up</a></span>
                         </div>
-                        <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
-                            <a class="white-box-icon" href="login.html"><i class="fa-regular fa-user"></i></a>
+                        <div class="quote-icon quote-user d-block d-md-none">
+                            <span><a href="login.html"><i class="fa-regular fa-user"></i></a></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="nav-header row align-items-center">
-                <div class="col-lg-10 d-none d-xl-block ">
-                    <nav class="mainmenu-nav d-none d-lg-block">
-                        <ul class="mainmenu">
-                            <li class="logo"><a href="home.html">
-                                    <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
-                                </a></li>
-                            <li class="nav-link"><a class="outline" href="venue.html">Venues</a></li>
-                            <li class="nav-link"><a class="outline" href="vendors.html">Vendors</a></li>
-                            <li class="nav-link"><a class="outline" href="wed-trends.html">Trends</a></li>
-                            <li class="nav-link"><a class="outline" href="wed-theme.html">Themes</a></li>
-                            <li class="nav-link"><a class="outline" href="services.html">Services</a></li>
-                            <li class="nav-link active"><a class="" href="collection.html">Photos</a></li>
-                            <li class="nav-link"><a class="outline" href="real-wed.html">Real Weddings</a></li>
-                            <li class="nav-link"><a class="outline" href="blogs.html">Blog</a></li>
-                            <li class="nav-link"><a class="outline" href="shop.html">Shop</a></li>
-                            <li class="nav-link"><a class="outline" href="e-invites.html">E-Invites</a></li>
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="p-0" href="home.html">
+                        <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="venue.html">Venues</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="vendors.html">Vendors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-trends.html">Trends</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-theme.html">Themes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="collection.html">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="real-wed.html">Real Weddings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="blogs.html">Blog</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="shop.html">Shop</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="e-invites.html">E-Invites</a>
+                            </li>
+
                         </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-2 pb-2 float-end">
-                    <div class="header-menu-bar ">
-                        <div class="d-flex form-inputs">
-                            <i class="fa-solid fa-magnifying-glass ms-3"></i>
-                            <input id="searchInput" class="form-control ps-5" type="text" placeholder="Search for...">
+                        <div class="form-group fg--search my-3">
+                            <input id="searchInput" type="text" class="input" placeholder="Search for...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </Header>
 
         <div class="container py-2">
@@ -133,29 +155,29 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-block my-3">
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Red</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Pink</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Golden</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Whits</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Yellow</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Maroon</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Peach</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Orange</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Pastel</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Heavy</a></span>
-                <span class=""><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Light</a></span>
+            <div class="d-flex flex-row flex-wrap options">
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Red</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Pink</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Golden</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Whits</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Yellow</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Maroon</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Peach</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Orange</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Pastel</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Heavy</a></span>
+                <span class="m-3"><a class="border border-2 fs-5 fw-semibold p-2 rounded" href="">Light</a></span>
             </div>
 
             <div class="row venue-container my-4">
                 <div class="section-title py-4 row">
-                    <div class="col-4">
+                    <div class="col-lg-4 ps-1">
                         <span class="fw-semibold fs-5">Sort by:</span>
                         <span class="mx-2"> <img class="mx-2" src="assets/images/icons/up-down.png" alt="">Recent</span>
                         <span class="mx-2"> <img class="mx-2" src="assets/images/icons/up-down.png"
                                 alt="">Trending</span>
                     </div>
-                    <div class="col d-flex form-inputs">
+                    <div class="col-lg-8 d-flex form-inputs">
                         <i class="fa-solid fa-magnifying-glass ms-2 ps-4"></i>
                         <input class="form-control ps-5 w-50" type="text" placeholder="Search Photos & Ideas...">
                     </div>
@@ -172,32 +194,30 @@
                     <a href="collection-similar1.html"><img src="assets/images/collections/collection3.jpg" alt=""></a>
                 </div>
                 <div class="box" id="b-4">
-                    <a href="collection-similar1.html"><img src="assets/images/collections/collection4.jpg" alt=""></a>
+                    <a href="collection-similar1.html"><img src="assets/images/collections/collection5.jpg" alt=""></a>
                 </div>
                 <div class="box" id="b-5">
-                    <a href="collection-similar1.html"><img src="assets/images/collections/collection5.jpg" alt=""></a>
+                    <a href="collection-similar1.html"><img src="assets/images/collections/collection4.jpg" alt=""></a>
                 </div>
                 <div class="box" id="b-6">
                     <a href="collection-similar1.html"><img src="assets/images/collections/collection6.jpg" alt=""></a>
                 </div>
-            </div>
-            <div class="gallery">
-                <div class="box" id="b-1">
+                <div class="box" id="b-7">
                     <a href="collection-similar1.html"><img src="assets/images/collections/collection7.jpg" alt=""></a>
                 </div>
-                <div class="box" id="b-2">
+                <div class="box" id="b-8">
                     <a href="collection-similar1.html"><img src="assets/images/collections/collection8.jpg" alt=""></a>
                 </div>
-                <div class="box" id="b-3">
+                <div class="box" id="b-9">
                     <a href="collection-similar1.html"><img src="assets/images/collections/collection9.jpg" alt=""></a>
                 </div>
-                <div class="box" id="b-4">
-                    <a href="collection-similar1.html"><img src="assets/images/collections/collection10.jpg" alt=""></a>
-                </div>
-                <div class="box" id="b-5">
+                <div class="box" id="b-10">
                     <a href="collection-similar1.html"><img src="assets/images/collections/collection11.jpg" alt=""></a>
                 </div>
-                <div class="box" id="b-6">
+                <div class="box" id="b-11">
+                    <a href="collection-similar1.html"><img src="assets/images/collections/collection10.jpg" alt=""></a>
+                </div>
+                <div class="box" id="b-12">
                     <a href="collection-similar1.html"><img src="assets/images/collections/collection12.jpg" alt=""></a>
                 </div>
             </div>

@@ -15,7 +15,6 @@
 .services-container .detail-content {
     display: flex;
     justify-content: center;
-
 }
 
 .services-container .detail-content div {
@@ -48,12 +47,10 @@
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-
 .counter {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-
 }
 
 .counter div {
@@ -107,6 +104,26 @@
     width: 100px;
 }
 
+@media (min-width: 300px) and (max-width: 900px){
+    .packages {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .package-card{
+        width: 100%;
+        margin: 1rem !important;
+        padding: 0 !important;
+    }
+    .services-container .detail-content div{
+        margin: 1rem;
+        padding: 1.2rem;
+    }
+    .services-container .bg-content{
+        font-size: 4vmax;
+        top: 43.5vh;
+    }
+}
 /* service2 */
 
 .service-bg {
@@ -137,3 +154,8 @@
     background-color: white;
 }
 
+@media (min-width: 300px) and (max-width: 600px){
+    .work{
+        padding: 1rem !important;
+    }
+}

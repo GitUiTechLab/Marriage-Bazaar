@@ -54,15 +54,6 @@ li {
         Header 
 *******************/
 
-/* .back-arrow i {
-    position: absolute;
-    right: 90%;
-    color: white;
-    padding-left: 2%;
-    font-size: 2rem;
-} */
-/* <div class="back-arrow"><a href="venue-search.html"><i class="fa-solid fa-arrow-left-long"></i></a></div> */
-
 /* upper-header */
 
 header {
@@ -133,12 +124,10 @@ header {
     }
 }
 
-/* nav-header */
+/* navbar */
 
 .navbar {
-    /* height: 66px; */
     background-color: var(--color-primary9);
-    /* z-index: 2; */
 }
 
 .navbar-nav a {
@@ -149,6 +138,7 @@ header {
     margin: auto 2px;
     display: block;
     transition: 0.3s;
+    border-bottom: 4px solid transparent;
 }
 
 .navbar-nav a:hover {
@@ -156,41 +146,12 @@ header {
     color: var(--color-heading);
 }
 
-.nav-header {
-    height: 66px;
-    background-color: var(--color-primary9);
-}
-
 .logo-img {
     margin: 18px;
     height: 40px;
 }
 
-.mainmenu-nav .mainmenu {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.mainmenu-nav .mainmenu .nav-link>a {
-    color: var(--color-heading);
-    font-size: 16px;
-    font-weight: 600;
-    padding: 20px;
-    margin: auto 2px;
-    display: block;
-    height: 66px;
-    transition: 0.3s;
-}
-
-.mainmenu-nav .mainmenu .nav-link>a:hover {
-    background-color: white;
-    color: var(--color-heading);
-}
-
-.mainmenu-nav .mainmenu .active a {
+.active a {
     background-color: white;
     color: var(--color-heading);
     border-bottom: 4px solid var(--color-primary5);
@@ -202,23 +163,19 @@ header {
     justify-content: center;
 }
 
-.nav-header .form-inputs,
 .venue-container .form-inputs {
     position: relative;
 }
 
-.nav-header .form-inputs .form-control,
 .venue-container .form-inputs .form-control {
     height: 45px;
 }
 
-.nav-header .form-inputs .form-control:focus,
 .venue-container .form-inputs .form-control:focus {
     box-shadow: none;
     border: 1px solid #000;
 }
 
-.nav-header .form-inputs i,
 .venue-container .form-inputs i {
     position: absolute;
     right: 10px;
@@ -264,9 +221,12 @@ header {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
     .header-quote .quote-icon {
         margin: 0 10px;
+    }
+    .venue-container .form-inputs .form-control {
+        width: 100% !important;
     }
 }
 
@@ -314,7 +274,7 @@ header {
 
 .outline {
     position: relative;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     border-bottom: 0px solid transparent;
 }
 
@@ -323,6 +283,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
+    top: 100%;
     height: 4px;
     width: 0;
     background-color: var(--color-primary5);
@@ -362,6 +323,12 @@ header {
 .btn-pink:hover {
     color: white;
     background-color: var(--color-primary3);
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    .buttons a{
+        font-size: .8rem !important;
+    }
 }
 
 /**********************
@@ -600,4 +567,17 @@ p:has(> a) {
 .rights {
     text-align: center;
     margin-top: 40px;
+}
+
+@media (min-width: 300px) and (max-width: 900px){
+    .footer-lower h5{
+        font-size: 18px;
+    }
+    .footer-lower a{
+        font-size: 12px;
+    }
+    .get-img {
+        height: 50px;
+        width: 80%;
+    }
 }

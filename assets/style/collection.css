@@ -7,7 +7,7 @@
 
 .collection-add img{
     height: 15vh;
-    width: 20vw;
+    width: 150px;
     margin: 1rem;
 }
 
@@ -30,4 +30,16 @@
 .styles .col{
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
     margin: 1rem;
+}
+
+@media (min-width: 300px) and (max-width: 800px){
+ .collection-add{
+    padding: 0;
+ }
+ .options span {
+    margin: .5rem !important;
+ }
+ .options a {
+    font-size: 14px !important;
+ }
 }

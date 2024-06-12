@@ -73,7 +73,6 @@
 .venue-container .card-text img {
     height: .9rem;
     width: .9rem;
-
 }
 
 .venue-container .price {
@@ -143,10 +142,27 @@
     height: 100%;
 }
 
+.review-pic{
+    height: 56px;
+    width: 56px;
+    padding: 0px;
+    margin-left: .5rem;
+}
 @media (min-width: 300px) and (max-width: 900px) {
+    .review-div{
+        margin: 0 !important;
+    }
     .review .div2 {
         left: 0;
         position: relative;
+    }
+
+    .review .div1 .quote {
+        height: 40px;
+    }
+
+    .review .div1 {
+        padding: 1rem !important;
     }
 }
 
@@ -181,7 +197,6 @@
 
 .venue-bg {
     height: 42vh;
-    /* height: 100%; */
 }
 
 .venue-bg img {
@@ -209,7 +224,6 @@
     border-radius: 4px;
     width: 45%;
 }
-
 
 .detail-content button {
     margin: 7%;
@@ -265,13 +279,13 @@
 }
 
 .checkbox:checked~.switch .switch__circle {
-    left: 0;
-    right: calc(100% - 30px);
+    right: 0;
+    left: calc(100% - 30px);
 }
 
 .checkbox:not(:checked)~.switch .switch__circle {
-    left: calc(100% - 30px);
-    right: 0;
+    right: calc(100% - 30px);
+    left: 0;
 }
 
 .switch__circle-inner {
@@ -283,13 +297,30 @@
 }
 
 @media (min-width: 300px) and (max-width: 800px) {
-
     .detail-left,
     .detail-right {
         width: 100%;
         margin: 0 !important;
+        padding: 1rem !important;
     }
-    .detail-right{
+
+    .detail-right {
         margin-top: 2rem !important;
+    }
+
+    .detail-review {
+        padding: 1rem !important;
+    }
+
+    .fa-star {
+        font-size: .8rem !important;
+    }
+}
+
+/* wed-trend */
+
+@media (min-width: 300px) and (max-width: 800px){
+    .wed-trend .detail-left{
+        width: 100% !important;
     }
 }

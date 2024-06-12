@@ -28,9 +28,9 @@
 
 <body>
     <div class="main-wrapper">
-        <Header class="wed-header container-fluid">
-            <div class="upper-header row align-items-center ">
-                <div class="contents">
+        <Header class="wed-header container-fluid p-0">
+            <div class="upper-header align-items-center ">
+                <div class="contents container-fluid">
                     <div class="drop-cities">
                         <ul>
                             <li class="nav-item dropdown row">
@@ -58,60 +58,80 @@
                             <span><i class="fa-regular fa-user me-1"></i> <a class="px-1 mx-1"
                                     href="signin-signup.html">Sign In/Sign Up</a></span>
                         </div>
-                        <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
-                            <a class="white-box-icon" href="login.html"><i class="fa-regular fa-user"></i></a>
+                        <div class="quote-icon quote-user d-block d-md-none">
+                            <span><a href="login.html"><i class="fa-regular fa-user"></i></a></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="nav-header row align-items-center">
-                <div class="col-lg-10 d-none d-xl-block ">
-                    <nav class="mainmenu-nav d-none d-lg-block">
-                        <ul class="mainmenu">
-                            <li class="logo"><a href="home.html">
-                                    <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
-                                </a></li>
-                            <li class="nav-link active"><a class="" href="venue.html">Venues</a></li>
-                            <li class="nav-link"><a class="outline" href="vendors.html">Vendors</a></li>
-                            <li class="nav-link"><a class="outline" href="wed-trends.html">Trends</a></li>
-                            <li class="nav-link"><a class="outline" href="wed-theme.html">Themes</a></li>
-                            <li class="nav-link"><a class="outline" href="services.html">Services</a></li>
-                            <li class="nav-link"><a class="outline" href="collection.html">Photos</a></li>
-                            <li class="nav-link"><a class="outline" href="real-wed.html">Real Weddings</a></li>
-                            <li class="nav-link"><a class="outline" href="blogs.html">Blog</a></li>
-                            <li class="nav-link"><a class="outline" href="shop.html">Shop</a></li>
-                            <li class="nav-link"><a class="outline" href="e-invites.html">E-Invites</a></li>
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a class="p-0" href="home.html">
+                        <img class="logo-img" src="assets/images/logo/logo.png" alt="Site Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="venue.html">Venues</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="vendors.html">Vendors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-trends.html">Trends</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="wed-theme.html">Themes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="collection.html">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="real-wed.html">Real Weddings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="blogs.html">Blog</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="shop.html">Shop</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link outline" aria-current="page" href="e-invites.html">E-Invites</a>
+                            </li>
+
                         </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-2 pb-2 float-end">
-                    <div class="header-menu-bar ">
-                        <div class="d-flex form-inputs">
-                            <i class="fa-solid fa-magnifying-glass ms-3"></i>
-                            <input id="searchInput" class="form-control ps-5" type="text" placeholder="Search for...">
+                        <div class="form-group fg--search my-3">
+                            <input id="searchInput" type="text" class="input" placeholder="Search for...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="lower-header row align-items-center">
-                <div class="col">
+            </nav>
+            <div class="lower-header d-flex justify-content-around align-items-center flex-wrap">
+                <div>
                     <ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false"><span class="ms-0 me-3">No. of Guests</span><i
                                     class="fa-solid fa-angle-down"></i>
                             </a>
-
                             <ul class="dropdown-menu align-items-center px-0">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div>
                     <ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -121,13 +141,12 @@
                             <ul class="dropdown-menu align-items-center px-0">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div>
                     <ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -137,13 +156,12 @@
                             <ul class="dropdown-menu align-items-center px-0">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div>
                     <ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -153,13 +171,12 @@
                             <ul class="dropdown-menu align-items-center px-0">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div>
                     <ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -169,13 +186,12 @@
                             <ul class="dropdown-menu align-items-center px-0">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div>
                     <ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -185,13 +201,12 @@
                             <ul class="dropdown-menu align-items-center px-0">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div>
                     <ul>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -201,14 +216,12 @@
                             <ul class="dropdown-menu align-items-center px-0">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
-
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
-            <!-- <hr> -->
         </Header>
 
         <div class="title-bar container py-3">
@@ -344,44 +357,6 @@
                         <input class="border border-2 rounded w-100 p-3 my-2" type="number" name="no-of-guest"
                             id="no-of-guest" placeholder="No of Rooms">
                         <div class="row my-3 ms-2">
-                            <!-- <div class="col border-end border-2 p-2 ">
-                                <span class="fw-semibold mb-4 fs-5">Function Type</span>
-                                <div class="row">
-                                    <div class="col p-0">
-                                        <div class="round my-3 py-2">
-                                            <input type="checkbox" id="Pre-Wedding" />
-                                            <label class="m-0" for="Pre-Wedding"></label>
-                                            <span class="ms-4 py-3 ps-2">Pre-Wedding</span>
-                                        </div>
-                                    </div>
-                                    <div class="col p-0">
-                                        <div class="round my-3 py-2">
-                                            <input type="checkbox" id="Wedding" />
-                                            <label class="m-0" for="Wedding"></label>
-                                            <span class="ms-5 py-3">Wedding</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col p-2">
-                                <span class="fw-semibold mb-4 p-2 fs-5">Function Time</span>
-                                <div class="row">
-                                    <div class="col ">
-                                        <div class="round my-3 py-2">
-                                            <input type="checkbox" id="Evening" />
-                                            <label class="m-0" for="Evening"></label>
-                                            <span class="ms-5 py-3">Evening</span>
-                                        </div>
-                                    </div>
-                                    <div class="col ">
-                                        <div class="round my-3 py-2">
-                                            <input type="checkbox" id="Day" />
-                                            <label class="m-0" for="Day"></label>
-                                            <span class="ms-5 py-3">Day</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="col border-end border-2 p-2">
                                 <p class="fw-semibold mb-4 fs-5">Function Type</p>
                                 <div class="form-check form-check-inline">
@@ -394,11 +369,11 @@
                                     <label class="form-check-label py-1 my-1" for="Wedding">Wedding</label>
                                 </div>
                             </div>
-                            <div class="col p-2">
+                            <div class="col p-2 ms-3">
                                 <p class="fw-semibold mb-4 fs-5">Function Time</p>
-                                <div class="form-check form-check-inline ms-3">
-                                    <input class="form-check-input fs-3" type="radio" name="Function-Time"
-                                        id="Evening" checked>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input fs-3" type="radio" name="Function-Time" id="Evening"
+                                        checked>
                                     <label class="form-check-label py-1 my-1" for="Evening">Evening</label>
                                 </div>
                                 <div class="form-check form-check-inline">
@@ -541,10 +516,8 @@
             <div class="row my-3">
                 <div class="col-8">
                     <div class="row w-100 mb-3">
-                        <div class="col-md-1">
-                            <img class="" src="assets/images/venues/Picture.jpg" alt="">
-                        </div>
-                        <div class="col-md-11">
+                        <img class="review-pic" src="assets/images/venues/Picture.jpg" alt="">
+                        <div class="col-10">
                             <h5>Card title</h5>
                             <p class="text-body-secondary">Arp 11, 2024</p>
                         </div>
@@ -564,10 +537,8 @@
             <div class="row my-3">
                 <div class="col-8">
                     <div class="row w-100 mb-3">
-                        <div class="col-md-1">
-                            <img class="" src="assets/images/venues/Picture.jpg" alt="">
-                        </div>
-                        <div class="col-md-11">
+                        <img class="review-pic" src="assets/images/venues/Picture.jpg" alt="">
+                        <div class="col-10">
                             <h5>Card title</h5>
                             <p class="text-body-secondary">Arp 11, 2024</p>
                         </div>

@@ -70,7 +70,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 700px) and (max-width: 900px) {
     .banner-text p {
         font-size: 25px;
     }
@@ -85,13 +85,24 @@
 
     .banner-lower .drop-vendors,
     .banner-lower .drop-location {
-        width: 100%;
+        width: 50%;
     }
 }
 
-@media (min-width: 300px) and (max-width: 899){
+@media (min-width: 300px) and (max-width: 700px){
     .banner-text p {
         font-size: 22px;
+    }
+    .banner-content {
+        height: 100vh;
+    }
+    .banner-lower .drop-vendors,
+    .banner-lower .drop-location {
+        width: 100%;
+    }
+    .banner-lower {
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
@@ -217,7 +228,7 @@
     height: 0;
     border-top: 15.7rem solid transparent;
     border-left: 15rem solid white;
-    border-bottom: 15.8rem solid transparent;
+    border-bottom: 15.7rem solid transparent;
     z-index: 2;
 }
 
@@ -333,6 +344,13 @@
     left: 48%;
     width: 60%;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 300px) and (max-width: 700px){
+    .vendors-div .card-body{
+        left: 38%;
+        width: 70%;
+    }
 }
 
 /* blog-div */
