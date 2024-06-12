@@ -112,13 +112,13 @@ header {
     border-radius: 5px;
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .user-penal span {
         left: 75vw;
     }
 }
 
-@media (min-width: 300px) and (max-width: 700px){
+@media (min-width: 300px) and (max-width: 700px) {
     .user-penal span {
         left: 90vw;
     }
@@ -250,6 +250,7 @@ header {
     .header-quote .quote-icon {
         margin: 0 10px;
     }
+
     .venue-container .form-inputs .form-control {
         width: 100% !important;
     }
@@ -350,8 +351,8 @@ header {
     background-color: var(--color-primary3);
 }
 
-@media (min-width: 300px) and (max-width: 600px){
-    .buttons a{
+@media (min-width: 300px) and (max-width: 600px) {
+    .buttons a {
         font-size: .8rem !important;
     }
 }
@@ -416,7 +417,7 @@ header {
         Radio btn 
 ************************/
 
-.form-check-input{
+.form-check-input {
     cursor: pointer;
 }
 
@@ -430,8 +431,8 @@ header {
 ************************/
 
 
-@media (min-width:300px) and (max-width:600px){
-    .detail-review{
+@media (min-width:300px) and (max-width:600px) {
+    .detail-review {
         margin: 0 !important;
     }
 }
@@ -540,6 +541,19 @@ header {
 }
 
 /**************************************
+    Submit Wed
+***************************************/
+
+@media (min-width: 300px) and (max-width: 600px) {
+
+    .submit-wed .btn-trans,
+    .submit-wed .btn-pink {
+        padding: .8rem 0 !important;
+        width: 90% !important;
+    }
+}
+
+/**************************************
     Footer Styles
 ***************************************/
 
@@ -594,13 +608,33 @@ p:has(> a) {
     margin-top: 40px;
 }
 
-@media (min-width: 300px) and (max-width: 900px){
-    .footer-lower h5{
-        font-size: 18px;
+.footer-drop {
+    display: none;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .footer-link {
+        display: none;
     }
-    .footer-lower a{
-        font-size: 12px;
+
+    .footer-drop {
+        display: block;
     }
+
+    Footer .float-end {
+        float: left !important;
+    }
+
+    .blog-div{
+        padding: 2rem !important;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    Footer {
+        padding: 2rem;
+    }
+
     .get-img {
         height: 50px;
         width: 80%;
