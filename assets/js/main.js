@@ -230,8 +230,8 @@ const suggestions = [
   { name: "vendors", url: "vendors.html" },
   { name: "trends", url: "wed-trends.html" },
   { name: "themes", url: "wed-themes.html" },
-  { name: "collection", url: "collections.html" },
-  { name: "photos", url: "collections.html" },
+  { name: "collection", url: "collection.html" },
+  { name: "photos", url: "collection.html" },
   { name: "blogs", url: "blogs.html" },
   { name: "services", url: "services.html" },
   { name: "invitations", url: "e-invites.html" }
