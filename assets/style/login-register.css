@@ -10,7 +10,6 @@
 .login .left {
     display: flex;
     justify-content: center;
-    /* width: 50%; */
     background-color: white;
 }
 
@@ -70,4 +69,14 @@
 .login .right img {
     height: 100vh;
     width: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 600px){
+    .login .left form {
+        margin-top: 2rem;
+        padding: 0;  
+    }
+    .login .right img {
+        width: 100vw;
+    }
 }
