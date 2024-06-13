@@ -44,10 +44,22 @@ li {
     list-style: none;
 }
 
-* {
-    top: 0;
-    left: 0;
-    margin: 0;
+#splashscreen {
+    display: flex;
+    background: var(--color-primary9);
+    background-size: 15%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+}
+
+#ring {
+    background: url(../images/ringimg.webp) no-repeat center center/cover;
+    border-radius: 50%;
+    padding: 80px 50px;
 }
 
 /*******************
@@ -625,7 +637,7 @@ p:has(> a) {
         float: left !important;
     }
 
-    .blog-div{
+    .blog-div {
         padding: 2rem !important;
     }
 }

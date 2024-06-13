@@ -1,3 +1,10 @@
+let ss = document.getElementById("splashscreen");
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        ss.style.display = "none";
+    }, 2000);
+});
+
 $('.slider1').slick({
   dots: true,
   arrows: false,
