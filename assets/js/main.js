@@ -1,8 +1,8 @@
 let ss = document.getElementById("splashscreen");
 window.addEventListener("load", function () {
-    setTimeout(function () {
-        ss.style.display = "none";
-    }, 2000);
+  setTimeout(function () {
+    ss.style.display = "none";
+  }, 2000);
 });
 
 $('.slider1').slick({
@@ -244,43 +244,43 @@ const suggestions = [
   { name: "invitations", url: "e-invites.html" }
 ];
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("searchInput");
 
-  input.addEventListener("input", function() {
-      const val = this.value;
-      closeAllLists();
-      if (!val) return false;
-      const list = document.createElement("div");
-      list.setAttribute("id", this.id + "-autocomplete-list");
-      list.setAttribute("class", "autocomplete-items");
-      this.parentNode.appendChild(list);
-      for (let i = 0; i < suggestions.length; i++) {
-          if (suggestions[i].name.substr(0, val.length).toUpperCase() === val.toUpperCase()) {
-              const item = document.createElement("div");
-              item.innerHTML = "<strong>" + suggestions[i].name.substr(0, val.length) + "</strong>";
-              item.innerHTML += suggestions[i].name.substr(val.length);
-              item.innerHTML += "<input type='hidden' value='" + suggestions[i].name + "'>";
-              item.setAttribute("data-url", suggestions[i].url);
-              item.addEventListener("click", function() {
-                  window.location.href = this.getAttribute("data-url");
-              });
-              list.appendChild(item);
-          }
+  input.addEventListener("input", function () {
+    const val = this.value;
+    closeAllLists();
+    if (!val) return false;
+    const list = document.createElement("div");
+    list.setAttribute("id", this.id + "-autocomplete-list");
+    list.setAttribute("class", "autocomplete-items");
+    this.parentNode.appendChild(list);
+    for (let i = 0; i < suggestions.length; i++) {
+      if (suggestions[i].name.substr(0, val.length).toUpperCase() === val.toUpperCase()) {
+        const item = document.createElement("div");
+        item.innerHTML = "<strong>" + suggestions[i].name.substr(0, val.length) + "</strong>";
+        item.innerHTML += suggestions[i].name.substr(val.length);
+        item.innerHTML += "<input type='hidden' value='" + suggestions[i].name + "'>";
+        item.setAttribute("data-url", suggestions[i].url);
+        item.addEventListener("click", function () {
+          window.location.href = this.getAttribute("data-url");
+        });
+        list.appendChild(item);
       }
+    }
   });
 
   function closeAllLists(elmnt) {
-      const items = document.getElementsByClassName("autocomplete-items");
-      for (let i = 0; i < items.length; i++) {
-          if (elmnt !== items[i] && elmnt !== input) {
-              items[i].parentNode.removeChild(items[i]);
-          }
+    const items = document.getElementsByClassName("autocomplete-items");
+    for (let i = 0; i < items.length; i++) {
+      if (elmnt !== items[i] && elmnt !== input) {
+        items[i].parentNode.removeChild(items[i]);
       }
+    }
   }
 
-  document.addEventListener("click", function(e) {
-      closeAllLists(e.target);
+  document.addEventListener("click", function (e) {
+    closeAllLists(e.target);
   });
 });
 
@@ -378,3 +378,43 @@ jQuery(document).ready(function () {
     $('#' + modalId).removeClass('model-open');
   });
 });
+
+// Login with google
+
+function start() {
+  gapi.load('auth2', function() {
+    auth2 = gapi.auth2.init({
+      client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+      // Scopes to request in addition to 'profile' and 'email'
+      //scope: 'additional_scope'
+    });
+  });
+}
+
+$('#signinButton').click(function() {
+  auth2.grantOfflineAccess().then(signInCallback);
+});
+
+function signInCallback(authResult) {
+  if (authResult['code']) {
+    // The user granted offline access, and you received an authorization code
+    // Send the authorization code to your server
+    $.ajax({
+      type: 'POST',
+      url: '/storeauthcode',
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest'
+      },
+      contentType: 'application/octet-stream; charset=utf-8',
+      success: function(result) {
+        console.log('Code sent to server');
+        // Handle or display the result from your server
+      },
+      processData: false,
+      data: authResult['code']
+    });
+  } else {
+    console.log('Error: ' + authResult['error']);
+    // There was an error, handle it here
+  }
+}

@@ -1,11 +1,5 @@
 @import "main.css";
 
-.nav-header .form-inputs i {
-    position: absolute;
-    right: 10px;
-    top: 20px;
-}
-
 .bar {
     height: 8px;
     width: 30%;
@@ -17,12 +11,17 @@
     background-color: var(--color-primary6);
 }
 
-input {
+.submit-wed form .row div input {
     border: 1px solid rgba(128, 128, 128, 0.3);
     padding: 12px;
     margin: 5px auto;
     border-radius: 8px;
     width: 100%;
+}
+
+.submit-wed form .row div input[type="radio"] {
+    width: 10%;
+    border-radius: 50%;
 }
 
 .w-66 {
@@ -129,6 +128,12 @@ input {
     color: #fff;
 }
 
+@media (max-width:600px) {
+    .w-66 {
+        width: 100% !important;
+    }
+}
+
 @media screen and (min-width:800px) {
     .custom-model-main:before {
         content: "";
@@ -138,13 +143,12 @@ input {
         margin-right: -0px;
         height: 100%;
     }
-}
 
-@media screen and (max-width:799px) {
     .custom-model-inner {
         margin-top: 45px;
     }
 }
+
 
 .upload__inputfile {
     width: .1px;
@@ -155,7 +159,7 @@ input {
     z-index: -1;
 }
 
-.upload__btn{
+.upload__btn {
     cursor: pointer;
 }
 
@@ -193,7 +197,6 @@ input {
     font-size: 14px;
     color: white;
 }
-
 
 .img-bg {
     background-repeat: no-repeat;
