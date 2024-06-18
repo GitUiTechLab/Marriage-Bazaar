@@ -204,6 +204,7 @@ header {
 
 .fa-magnifying-glass {
     width: 10%;
+    left: 0px !important;
 }
 
 .fg--search {
