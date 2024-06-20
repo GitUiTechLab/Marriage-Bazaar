@@ -26,7 +26,7 @@
     width: 100%;
 }
 
-.login .left form input, .drop-down{
+.login .left form input, .drop-down, .form-select{
     background-color: transparent;
     border: 1px solid rgba(128, 128, 128, 0.3);
     padding: 12px;
@@ -35,9 +35,9 @@
     width: 100%;
 }
 
-.login .left form input:focus{
+.login .left form input:focus, .login .left form .form-select:focus{
     border: 1px solid var(--color-primary5);
-    outline: none;
+    outline: none !important;
 }
 
 .login .left form .input-div input{

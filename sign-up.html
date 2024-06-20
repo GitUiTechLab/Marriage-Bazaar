@@ -136,48 +136,28 @@
                     </div>
                     <div class="mb-2">
                         <label for="city"><span class="color-pink">*</span>City</label>
-                        <div class="drop-down">
-                            <ul class="p-0 mb-0">
-                                <li class="nav-item dropdown row">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><span class="ms-0 px-2 me-2 drop-name">Choose your base
-                                            city here</span>
-                                        <i class="fa-solid fa-angle-down float-end py-1 pe-2"></i>
-                                    </a>
-                                    <ul class="dropdown-menu align-items-center px-0">
-                                        <li><a class="dropdown-item" href="#">Mumbai</a></li>
-                                        <li><a class="dropdown-item" href="#">Delhi</a></li>
-                                        <li><a class="dropdown-item" href="#">Bengaluru</a></li>
-                                        <li><a class="dropdown-item" href="#">Hyderabad</a></li>
-                                        <li><a class="dropdown-item" href="#">Chennai</a></li>
-                                        <li><a class="dropdown-item" href="#">Kolkata</a></li>
-                                        <li><a class="dropdown-item" href="#">Pune</a></li>
-                                        <li><a class="dropdown-item" href="#">Ahmedabad</a></li>
-                                        <li><a class="dropdown-item" href="#">Jaipur</a></li>
-                                        <li><a class="dropdown-item" href="#">Surat</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        <select id="city" class="form-select" aria-label="Default select example">
+                            <option selected>Choose your base city here</option>
+                            <option value="1">Mumbai</option>
+                            <option value="2">Delhi</option>
+                            <option value="3">Bengaluru</option>
+                            <option value="4">Hyderabad</option>
+                            <option value="5">Chennai</option>
+                            <option value="6">Kolkata</option>
+                            <option value="7">Pune</option>
+                            <option value="8">Ahmedabad</option>
+                            <option value="9">Jaipur</option>
+                            <option value="10">Surat</option>
+                        </select>
                     </div>
                     <div class="mb-2">
-                        <label for="city"><span class="color-pink">*</span>Vendor Type</label>
-                        <div class="drop-down">
-                            <ul class="p-0 mb-0">
-                                <li class="nav-item dropdown row">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false"><span class="ms-0 px-2 me-2 drop-name">Select Vendor
-                                            Type</span>
-                                        <i class="fa-solid fa-angle-down float-end py-1 pe-2"></i>
-                                    </a>
-                                    <ul class="dropdown-menu align-items-center px-0">
-                                        <li><a class="dropdown-item" href="#">Vendor1</a></li>
-                                        <li><a class="dropdown-item" href="#">Vendor2</a></li>
-                                        <li><a class="dropdown-item" href="#">Vendor3</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                        <label for="vendor"><span class="color-pink">*</span>Vendor Type</label>
+                        <select id="vendor" class="form-select" aria-label="Default select example">
+                            <option selected>Select Vendor Type</option>
+                            <option value="1">Vendor1</option>
+                            <option value="2">Vendor2</option>
+                            <option value="3">Vendor3</option>
+                        </select>
                     </div>
                     <div class="mb-2">
                         <label for="email"><span class="color-pink">*</span>Email</label>

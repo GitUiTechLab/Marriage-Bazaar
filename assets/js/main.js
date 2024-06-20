@@ -170,7 +170,6 @@ function decreaseCount(a, b) {
   }
 }
 
-
 // variable divs
 
 var divs = ["container1", "container2", "container3", "container4", "container5"];
@@ -202,6 +201,8 @@ activeCons.forEach(activeCon => {
     activeCon.classList.add("activeContainer");
   })
 });
+
+// remove div
 
 const close = document.querySelector(".close");
 const col_add = document.querySelector(".collection-add");
