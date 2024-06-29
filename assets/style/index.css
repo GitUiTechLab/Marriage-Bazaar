@@ -6,7 +6,7 @@
 
 .banner-content {
     position: relative;
-    height: 62vh;
+    height: 75vh;
     background: url(../images/banner/banner-bg.png) center center/cover;
 }
 
@@ -37,12 +37,14 @@
     justify-content: center;
 }
 
-.banner-lower .drop-vendors,
-.banner-lower .drop-location {
+.banner-lower .form-select{
     background-color: white;
     color: black;
     height: 100%;
-    width: 50%;
+    border: none;
+    border-radius: 0;
+    /* padding: 1rem; */
+    /* width: 50%; */
 }
 
 .banner-lower .drop-vendors {
