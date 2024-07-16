@@ -156,6 +156,38 @@ progress[value]::-webkit-progress-value {
     cursor: pointer;
 }
 
+.content-on-close {
+    position: absolute;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none; /* Initially hidden */
+}
+.popup-overlay .popup {
+    background: white !important;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.vendor-login-content .popup button {
+    margin: 10px;
+}
+
 .form-check {
     display: flex;
     align-items: center;
@@ -169,7 +201,63 @@ progress[value]::-webkit-progress-value {
     margin: 2rem auto;
 }
 
-.popup {
+.upload__inputfile {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.upload__btn {
+    cursor: pointer;
+}
+
+.upload__btn-box {
+    margin-bottom: 10px;
+}
+
+.upload__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upload__img-box {
+    width: 300px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+.upload__img-close {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 24px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.upload__img-close:after {
+    content: '\2716';
+    font-size: 14px;
+    color: white;
+}
+
+.img-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100%;
+}
+
+nav .popup {
     display: none;
     position: fixed;
     left: 0;

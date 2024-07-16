@@ -435,8 +435,20 @@ popup_close.addEventListener("click", function () {
   popup.style.display = "none";
 })
 
-// fileInput in vendor login
-document.getElementById('fileInput').addEventListener('change', function(event) {
-  // You can handle the selected files here
-  console.log(event.target.files);
+document.querySelectorAll('.close-icon').forEach(function(icon) {
+  icon.addEventListener('click', function() {
+      const container = this.closest('.content-on-div');
+      const popupOverlay = document.getElementById('popupOverlay');
+      popupOverlay.style.display = 'flex';
+
+      document.getElementById('confirmYes').onclick = function() {
+          container.style.display = 'none';
+          popupOverlay.style.display = 'none';
+      };
+
+      document.getElementById('confirmNo').onclick = function() {
+          popupOverlay.style.display = 'none';
+      };
+  });
 });
+

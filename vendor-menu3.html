@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <!-- Title -->
-    <title>Vendor Projects | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
+    <title>Vendor Menu | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
 
     <!-- CSS
 	============================================ -->
@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <!-- <link rel="stylesheet" href="assets/style/venue.css"> -->
     <link rel="stylesheet" href="assets/style/vendor.css">
 
@@ -105,8 +106,8 @@
                                     src="assets/images/vectors/info-black.svg" alt="">Information</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="vendor-project.html"><img class="me-3"
-                                    src="assets/images/vectors/project-pink.svg" alt="">Projects</a>
+                            <a class="nav-link" href="vendor-project.html"><img class="me-3"
+                                    src="assets/images/vectors/project-black.svg" alt="">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="vendor-membership.html"><img class="me-3"
@@ -117,8 +118,8 @@
                                     src="assets/images/vectors/review-black.svg" alt="">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vendor-menu.html"><img class="me-3"
-                                    src="assets/images/vectors/services-black.svg" alt="">Menu</a>
+                            <a class="nav-link active" href="vendor-menu.html"><img class="me-3"
+                                    src="assets/images/vectors/services-pink.svg" alt="">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="vendor-google.html"><img class="me-3"
@@ -143,18 +144,53 @@
         </nav>
 
         <!-- vendor-login-content -->
-
-        <!-- 1 -->
+        <!-- 3 -->
         <div class="container vendor-login-content">
-            <h2>Projects</h2>
+            <h2> <a href="vendor-menu2.html"><i class="fa-solid fa-arrow-left"></i></a> Menu Files</h2>
             <div class="my-3 content-on-div">
                 <img class="w-100" src="assets/images/vendors/project.png" alt="">
-                <a href="vendor-project2.html">
-                <div class="content-on text-center">
-                        <img src="assets/images/vendors/file.png" alt="">
-                        <p>Portfolio</p>
+                <a href="vendor-project3.html">
+                    <div class="content-on text-center">
+                        <img class="bg-pink" src="assets/images/vendors/plus-sm.png" alt="">
+                        <p>Add New Image</p>
                     </div>
                 </a>
+            </div>
+            <div class="my-3 content-on-div">
+                <img class="w-100" src="assets/images/vendors/project.png" alt="">
+                <div class="content-on-close">
+                    <i class="fa-solid fa-circle-xmark close-icon project-close"></i>
+                </div>
+            </div>
+        
+            <div class="my-3 content-on-div">
+                <img class="w-100" src="assets/images/vendors/project.png" alt="">
+                <div class="content-on-close">
+                    <i class="fa-solid fa-circle-xmark close-icon project-close"></i>
+                </div>
+            </div>
+
+            <div id="popupOverlay" class="popup-overlay">
+                <div class="popup">
+                    <h4>Delete This Image?</h4>
+                    <p>This action cannot be undone, Are you sure?</p>
+                    <button class="logout-btn btn-green me-5" id="confirmNo">No</button>
+                    <button class="logout-btn btn-red ms-5" id="confirmYes">Yes</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container vendor-login-content">
+            <div class="d-flex justify-content-between">
+                <h4>Menu</h4>
+                <button class="btn-trans py-2 px-3">Add Menu</button>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <h5>Titile</h5>
+                <h5>Type</h5>
+                <h5>Price</h5>
             </div>
         </div>
 

@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <!-- Title -->
-    <title>Vendor Menu | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
+    <title>Vendor Projects | Marriage Bazaar | Unlock Your Dream Wedding Journey </title>
 
     <!-- CSS
 	============================================ -->
@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <!-- <link rel="stylesheet" href="assets/style/venue.css"> -->
     <link rel="stylesheet" href="assets/style/vendor.css">
 
@@ -102,30 +101,36 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="vendor-information.html"><img class="me-3" src="assets/images/vectors/info-black.svg" alt="">Information</a>
+                            <a class="nav-link" aria-current="page" href="vendor-information.html"><img class="me-3"
+                                    src="assets/images/vectors/info-black.svg" alt="">Information</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vendor-project.html"><img class="me-3" src="assets/images/vectors/project-black.svg" alt="">Projects</a>
+                            <a class="nav-link" href="vendor-project.html"><img class="me-3"
+                                    src="assets/images/vectors/project-black.svg" alt="">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vendor-membership.html"><img class="me-3" src="assets/images/vectors/plans-black.svg" alt="">Membership Plans</a>
+                            <a class="nav-link" href="vendor-membership.html"><img class="me-3"
+                                    src="assets/images/vectors/plans-black.svg" alt="">Membership Plans</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vendor-review.html"><img class="me-3" src="assets/images/vectors/review-black.svg" alt="">Reviews</a>
+                            <a class="nav-link" href="vendor-review.html"><img class="me-3"
+                                    src="assets/images/vectors/review-black.svg" alt="">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="vendor-menu.html"><img class="me-3" src="assets/images/vectors/services-pink.svg" alt="">Menu</a>
+                            <a class="nav-link active" href="vendor-menu.html"><img class="me-3"
+                                    src="assets/images/vectors/services-pink.svg" alt="">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vendor-google.html"><img class="me-3" src="assets/images/vectors/google-black.svg" alt="">Google My Business</a>
+                            <a class="nav-link" href="vendor-google.html"><img class="me-3"
+                                    src="assets/images/vectors/google-black.svg" alt="">Google My Business</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link logout" href="#"><img class="me-3" src="assets/images/vectors/logout-black.svg" alt="">Logout</a>
+                            <a class="nav-link logout" href="#"><img class="me-3"
+                                    src="assets/images/vectors/logout-black.svg" alt="">Logout</a>
                         </li>
                         <div class="popup">
                             <div class="success-popup">
                                 <span class="close"><i class="fa-solid fa-circle-xmark"></i></span>
-                                <img class="m-3" src="assets/img/registration/done.png" alt="">
                                 <h2>Log Out</h2>
                                 <p>Aar you sure you Want to logout?</p>
                                 <button class="logout-btn btn-green me-5" type="button">No</button>
@@ -138,17 +143,24 @@
         </nav>
 
         <!-- vendor-login-content -->
-        <!-- 2 -->
+        <!-- 3 -->
         <div class="container vendor-login-content">
             <h2> <a href="vendor-menu.html"><i class="fa-solid fa-arrow-left"></i></a> Upload Images to portfolio Menu</h2>
             <div class="border-dashed">
                 <img class="mb-3" src="assets/images/vendors/cloud.png" alt="">
                 <p>Max file size: 16 MB Accepted Formats:
                     jpg, jpeg, png Max files: 40</p>
-                <button class="btn-pink" type="button" onclick="document.getElementById('fileInput').click();">Choose
-                    Files</button>
-                <input type="file" id="fileInput" style="display:none;">
             </div>
+            <div class="upload__box">
+                <div class="upload__btn-box text-center">
+                    <label class="upload__btn btn-pink ">
+                        <p class="m-0">Choose Files</p>
+                        <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                    </label>
+                </div>
+                <div class="upload__img-wrap"></div>
+            </div>
+            <a href="vendor-menu3.html"><button class="btn-pink w-100" type="submit">Upload files</button></a>
         </div>
 
     </div>

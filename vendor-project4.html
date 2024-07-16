@@ -143,19 +143,48 @@
         </nav>
 
         <!-- vendor-login-content -->
-
-        <!-- 1 -->
+        <!-- 4 -->
         <div class="container vendor-login-content">
-            <h2>Projects</h2>
+            <h2> <a href="vendor-project.html"><i class="fa-solid fa-arrow-left"></i></a> Projects</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label color-green" for="flexCheckDefault">
+                    I certify that the work uploaded is my own / is the copyright of our firm. I understand that any
+                    work found to be someone else’s would be removed immediately, and action could be taken.
+                </label>
+            </div>
             <div class="my-3 content-on-div">
                 <img class="w-100" src="assets/images/vendors/project.png" alt="">
-                <a href="vendor-project2.html">
-                <div class="content-on text-center">
-                        <img src="assets/images/vendors/file.png" alt="">
-                        <p>Portfolio</p>
+                <a href="vendor-project3.html">
+                    <div class="content-on text-center">
+                        <img class="bg-pink" src="assets/images/vendors/plus-sm.png" alt="">
+                        <p>Add New Image</p>
                     </div>
                 </a>
             </div>
+            <div class="my-3 content-on-div">
+                <img class="w-100" src="assets/images/vendors/project.png" alt="">
+                <div class="content-on-close">
+                    <i class="fa-solid fa-circle-xmark close-icon project-close"></i>
+                </div>
+            </div>
+        
+            <div class="my-3 content-on-div">
+                <img class="w-100" src="assets/images/vendors/project.png" alt="">
+                <div class="content-on-close">
+                    <i class="fa-solid fa-circle-xmark close-icon project-close"></i>
+                </div>
+            </div>
+
+            <div id="popupOverlay" class="popup-overlay">
+                <div class="popup">
+                    <h4>Delete This Image?</h4>
+                    <p>This action cannot be undone, Are you sure?</p>
+                    <button class="logout-btn btn-green me-5" id="confirmNo">No</button>
+                    <button class="logout-btn btn-red ms-5" id="confirmYes">Yes</button>
+                </div>
+            </div>
+            
         </div>
 
     </div>
