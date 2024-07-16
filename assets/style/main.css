@@ -416,6 +416,11 @@ header {
     background-color: var(--color-primary10);
 }
 
+.bg-dark-pink {
+    background-color: var(--color-primary6);
+    color: #fff;
+}
+
 .bg-trans {
     background-color: transparent ;
 }
@@ -621,7 +626,7 @@ Footer {
     color: var(--heading-color1);
 }
 
-p:has(> a) {
+Footer p:has(> a) {
     border-bottom: 1px solid var(--heading-color3);
     opacity: .40;
 }

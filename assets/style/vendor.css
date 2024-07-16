@@ -1,0 +1,219 @@
+@import "main.css";
+
+@media screen and (min-width: 992px) {
+
+    .vertical-navbar .container-fluid,
+    .vertical-navbar.navbar-expand-lg .navbar-collapse,
+    .vertical-navbar.navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vertical-navbar {
+        width: 20%;
+        height: 100vh;
+        align-items: flex-start;
+        top: 76px;
+    }
+
+    .navbar-brand {
+        margin-left: 0.5rem;
+    }
+}
+
+.vertical-navbar .nav-link {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: normal;
+    width: 100%;
+}
+
+.vertical-navbar .nav-link:hover {
+    background-color: var(--color-primary9) !important;
+}
+
+.vertical-navbar .active {
+    color: var(--color-primary5) !important;
+    font-size: 1.1em;
+    font-weight: normal;
+    width: 100%;
+}
+
+.vertical-navbar img {
+    fill: #000 !important;
+}
+
+.vendor-login-content {
+    width: 76vw;
+    margin: 100px 2rem 2rem 22vw;
+    text-align: justify;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.vendor-login-content .container .flex-column {
+    width: 100%;
+}
+
+.border-pink {
+    border: 1px solid var(--color-primary5);
+    border-radius: 5px;
+}
+
+.progress-bar__wrapper {
+    position: relative;
+}
+
+.progress-bar__value {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+progress {
+    width: 100%;
+    height: 30px;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: width 300ms ease;
+}
+
+progress[value]::-webkit-progress-bar {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: width 300ms ease;
+}
+
+progress[value]::-webkit-progress-value {
+    width: 0;
+    border-radius: 5px;
+    background-color: var(--color-primary5);
+    transition: width 300ms ease;
+}
+
+.vendor-login-content .container ul li {
+    list-style: disc;
+    line-height: 30px;
+}
+
+.vendor-login-content .container label {
+    width: 28%;
+}
+
+.vendor-login-content .container input,
+.vendor-login-content .container textarea,
+.vendor-login-content .container .form-select {
+    width: 70%;
+    padding: .8rem;
+}
+
+.vendor-login-content .container .form-select {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.color-gray {
+    color: rgb(105, 105, 105);
+}
+
+.color-red{
+    color: red;
+}
+
+.color-green{
+    color: green;
+}
+
+.form-check-input {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 10px;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.vendor-login-content .content-on-div {
+    position: relative;
+}
+
+.vendor-login-content .content-on{
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    z-index: 99;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.border-dashed {
+    border: 2px dashed var(--color-primary5);
+    width: 30%;
+    padding: 1.5rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.success-popup {
+    background-color: #fff;
+    box-shadow: var(--box-shadow1);
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 2rem 2rem 2rem;
+    position: relative;
+}
+
+.success-popup .close {
+    position: absolute;
+    right: 0;
+    top: -20%;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+.logout-btn {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+}
+
+.btn-green{
+    background-color: green;
+    
+}
+.btn-red{
+    background-color: red;
+}

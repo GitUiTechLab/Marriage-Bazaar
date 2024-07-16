@@ -419,3 +419,24 @@ function signInCallback(authResult) {
     // There was an error, handle it here
   }
 }
+
+// Success popup Js
+
+log_out = document.querySelector(".logout");
+popup = document.querySelector(".popup");
+popup_close = document.querySelector(".close");
+
+log_out.addEventListener('click', function () {
+  popup.style.display = 'flex';
+  // confirm("Aar you sure you Want to logout?");
+});
+
+popup_close.addEventListener("click", function () {
+  popup.style.display = "none";
+})
+
+// fileInput in vendor login
+document.getElementById('fileInput').addEventListener('change', function(event) {
+  // You can handle the selected files here
+  console.log(event.target.files);
+});
