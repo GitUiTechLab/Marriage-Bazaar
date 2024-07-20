@@ -21,6 +21,11 @@
     }
 }
 
+.vendor-pic {
+    height: 50px;
+    width: 50px;
+}
+
 .vertical-navbar .nav-link {
     color: #fff;
     font-size: 1.1em;
