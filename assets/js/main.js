@@ -32,7 +32,7 @@ $('.slider1').slick({
 });
 
 $('.slider2').slick({
-  // arrows: true,
+  arrows: true,
   slidesToShow: 3,
   slidesToScroll: 3,
   autoplay: true,
@@ -213,24 +213,6 @@ function close_div() {
   bg.style.height = "100%";
 }
 
-// Dropdown
-
-document.addEventListener('DOMContentLoaded', function () {
-  const dropdowns = document.querySelectorAll('.dropdown');
-
-  dropdowns.forEach(dropdown => {
-    const dropdownItems = dropdown.querySelectorAll('.dropdown-item');
-    const dropNameSpan = dropdown.querySelector('.drop-name');
-
-    dropdownItems.forEach(item => {
-      item.addEventListener('click', function (event) {
-        event.preventDefault();
-        dropNameSpan.textContent = this.textContent;
-      });
-    });
-  });
-});
-
 // Searchbar
 
 const suggestions = [
@@ -383,7 +365,7 @@ jQuery(document).ready(function () {
 // Login with google
 
 function start() {
-  gapi.load('auth2', function() {
+  gapi.load('auth2', function () {
     auth2 = gapi.auth2.init({
       client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
       // Scopes to request in addition to 'profile' and 'email'
@@ -392,7 +374,7 @@ function start() {
   });
 }
 
-$('#signinButton').click(function() {
+$('#signinButton').click(function () {
   auth2.grantOfflineAccess().then(signInCallback);
 });
 
@@ -407,7 +389,7 @@ function signInCallback(authResult) {
         'X-Requested-With': 'XMLHttpRequest'
       },
       contentType: 'application/octet-stream; charset=utf-8',
-      success: function(result) {
+      success: function (result) {
         console.log('Code sent to server');
         // Handle or display the result from your server
       },
@@ -435,20 +417,20 @@ popup_close.addEventListener("click", function () {
   popup.style.display = "none";
 })
 
-document.querySelectorAll('.close-icon').forEach(function(icon) {
-  icon.addEventListener('click', function() {
-      const container = this.closest('.content-on-div');
-      const popupOverlay = document.getElementById('popupOverlay');
-      popupOverlay.style.display = 'flex';
+document.querySelectorAll('.close-icon').forEach(function (icon) {
+  icon.addEventListener('click', function () {
+    const container = this.closest('.content-on-div');
+    const popupOverlay = document.getElementById('popupOverlay');
+    popupOverlay.style.display = 'flex';
 
-      document.getElementById('confirmYes').onclick = function() {
-          container.style.display = 'none';
-          popupOverlay.style.display = 'none';
-      };
+    document.getElementById('confirmYes').onclick = function () {
+      container.style.display = 'none';
+      popupOverlay.style.display = 'none';
+    };
 
-      document.getElementById('confirmNo').onclick = function() {
-          popupOverlay.style.display = 'none';
-      };
+    document.getElementById('confirmNo').onclick = function () {
+      popupOverlay.style.display = 'none';
+    };
   });
 });
 
