@@ -1,2 +1,0 @@
-# Marriage-Bazaar
-Wedding Planner 
