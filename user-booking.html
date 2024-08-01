@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Marriage Bazaar | Unlock Your Dream Wedding Journey</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <!-- <div id="splashscreen">
+        <div id="ring">
+            <img src="assets/images/logo.png">
+        </div>
+    </div> -->
+
+    <!-- Header -->
+    <Header class="container-fluid p-0">
+        <nav class="navbar-1 d-flex justify-content-center">
+            <div class="m-1">
+                <select id="language" class="form-select rounded py-1" aria-label="Default select example">
+                    <option selected>Select Language</option>
+                    <option value="1">English</option>
+                    <option value="2">Hindi</option>
+                    <option value="3">Gujarati</option>
+                    <option value="4">Marathi</option>
+                    <option value="5">Panjabi</option>
+                    <option value="6">Bangali</option>
+                    <option value="7">Tamil</option>
+                </select>
+            </div>
+            <div class="m-1">
+                <select id="city" class="form-select rounded py-1" aria-label="Default select example">
+                    <option selected>All Cities</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Delhi</option>
+                    <option value="3">Bengaluru</option>
+                    <option value="4">Hyderabad</option>
+                    <option value="5">Chennai</option>
+                    <option value="6">Kolkata</option>
+                    <option value="7">Pune</option>
+                    <option value="8">Ahmedabad</option>
+                    <option value="9">Jaipur</option>
+                    <option value="10">Surat</option>
+                </select>
+            </div>
+        </nav>
+        <nav class="navbar-2 navbar bg-pink navbar-expand-lg p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand my-2" href="index.html"><img class="logo-img" src="assets/images/logo.png"
+                        alt="Site Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar2"
+                    aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar2">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="venues.html">Venues</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="vendors.html">Vendors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="collection.html">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="real-wed.html">Real Weddings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="blogs.html">Blog</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="form-control">
+                            <button class="btn p-0" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass me-2"></i></button>
+                            <input class="border-0 outline-0" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                    <div class="signup mx-3 p-2">
+                        <!-- <a href="signup.html"><span class=""><i class="fa-regular fa-user"></i> Signup</span></a> -->
+                        <!-- <span class="visually-hidden"><img class="profile-pic" src="assets/images/reviews/pic.jpg" alt=""></span> -->
+                        <div class="dropdown">
+                            <span class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="profile-pic" src="assets/images/dp-pic.jpg" alt="">
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#">
+                                        <h5>User name</h5>
+                                    </a></li>
+                                <hr class="m-0">
+                                <li><a class="dropdown-item" href="user-shortlist.html">Shortlist</a></li>
+                                <li><a class="dropdown-item" href="user-booking.html">Bookings</a></li>
+                                <li><a class="dropdown-item" href="user-settings.html">Settings</a></li>
+                                <li><a class="dropdown-item" href="#appModal">Download App</a></li>
+                                <li><a class="dropdown-item" href="#logoutModal">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </Header>
+    <!-- Header End-->
+
+    <div class="container user-dashboard p-0">
+        <div class="section-title pt-4">
+            <h2 class="color-pink text-center">Booking detail</h2>
+        </div>
+        <div class="user-booking m-3">
+            <div class="my-5">
+                <div class="mb-3">
+                    <h3>Upcoming booking</h3>
+                </div>
+                <div class="bg-pink p-4 my-3">
+                    <h4 class="text-center">Engagement</h4>
+                    <div class="d-flex justify-content-around gap-4">
+                        <div class="card text-center">
+                            <i class="fa-regular fa-user color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-hand-holding-hand color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-calendar-days color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-location-dot color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-phone color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-pink p-4 my-3">
+                    <h4 class="text-center">Engagement</h4>
+                    <div class="d-flex justify-content-around gap-4">
+                        <div class="card text-center">
+                            <i class="fa-regular fa-user color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-hand-holding-hand color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-calendar-days color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-location-dot color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-phone color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5">
+                <div class="mb-3">
+                    <h3>Past booking</h3>
+                </div>
+                <div class="bg-pink p-4 my-3">
+                    <h4 class="text-center">Engagement</h4>
+                    <div class="d-flex justify-content-around gap-4">
+                        <div class="card text-center">
+                            <i class="fa-regular fa-user color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-hand-holding-hand color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-calendar-days color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-location-dot color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-phone color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-pink p-4 my-3">
+                    <h4 class="text-center">Engagement</h4>
+                    <div class="d-flex justify-content-around gap-4">
+                        <div class="card text-center">
+                            <i class="fa-regular fa-user color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-hand-holding-hand color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-calendar-days color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-location-dot color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                        <div class="card text-center">
+                            <i class="fa-solid fa-phone color-pink fs-2 m-2"></i>
+                            <h5>Vendor Name</h5>
+                            <span>Kushal K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <Footer>
+        <div class="footer-1 py-2">
+            <div class="row">
+                <h2 class="mb-5">MarriageBazaar - Your Personal Wedding Organizer</h2>
+            </div>
+            <!-- newsletter -->
+            <form action="">
+                <div class="newsletter">
+                    <div>
+                        <h4>Subscribe to our newsletter</h4>
+                        <span>Share your email & phone number to <br>
+                            stay updated with our latest news.</span>
+                    </div>
+                    <div>
+                        <span>Email:</span> <br>
+                        <input type="email" name="" id="" placeholder="example@email.com">
+                    </div>
+                    <div>
+                        <span>Phone:</span> <br>
+                        <input type="tel" name="" id="" placeholder="+91 1010000666">
+                    </div>
+                    <div>
+                        <button class="subscribe-btn btn-pink">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer-2 row my-4 py-2">
+            <div class="col-lg-5">
+                <h4 class="mb-3">Contact us to get best deals</h4>
+                <div class="my-3">
+                    <h6 class="fw-semibold">For Vendors</h6>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-envelope me-2"></i>
+                            vendor@marrigebazaar.com</a>
+                    </p>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-phone me-2"></i> +91 99999-99991</a></p>
+                </div>
+                <div class="my-3">
+                    <h6 class="fw-semibold">For Users</h6>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-envelope me-2"></i> user@marrigebazaar.com</a>
+                    </p>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-phone me-2"></i> +91 99999-99992</a></p>
+                </div>
+                <div class="my-3">
+                    <h6 class="fw-semibold">Registered Address</h6>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-location-dot me-2"></i> Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Dignissimos, deleniti.</a></p>
+                </div>
+            </div>
+            <div class="col-lg-7 my-3">
+                <div class="float-start">
+                    <h5>Follow us on:</h5>
+                    <ul class="p-0">
+                        <li class="my-2"><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/footer/facebook.png"
+                                        alt="">
+                                </div><span>Facebook</span>
+                            </a></li>
+                        <li class="my-2"><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/footer/twitter.png" alt="">
+                                </div><span>Twitter</span>
+                            </a></li>
+                        <li class="my-2"><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/footer/pinterest.png"
+                                        alt=""></div><span>Pinterest</span>
+                            </a></li>
+                        <li class="my-2"><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/footer/instagram.png"
+                                        alt=""></div><span>Instagram</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="float-end">
+                    <h5>Get The MarriageBazaar</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><img class="get-img" src="assets/images/footer/apple-app-store-logo.jpg"
+                                alt=""></li>
+                        <li class="my-1"><img class="get-img" src="assets/images/footer/get_in_on_google.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-3 row py-2">
+            <div class="row footer-link">
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Start Planning</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="">Search By Vendor</a></li>
+                        <li class="my-1"><a href="">Search By City</a></li>
+                        <li class="my-1"><a href="">Download Our App</a></li>
+                        <li class="my-1"><a href="">Top Rated Vendors</a></li>
+                        <li class="my-1"><a href="">Destination Wedding</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Wedding Ideas</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="">Wedding Blog</a></li>
+                        <li class="my-1"><a href="">Wedding Inspiration Gallery</a></li>
+                        <li class="my-1"><a href="">Real Wedding</a></li>
+                        <li class="my-1"><a href="">Submit Wedding</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Photo Gallery</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="">Bridal Wear</a></li>
+                        <li class="my-1"><a href="">Wedding Jewellery</a></li>
+                        <li class="my-1"><a href="">Bridal Makeup & Hair</a></li>
+                        <li class="my-1"><a href="">Wedding Decor</a></li>
+                        <li class="my-1"><a href="">Wedding Photography</a></li>
+                        <li class="my-1"><a href="">Groom Wear</a></li>
+                        <li class="my-1"><a href="">Invitations & Favors</a></li>
+                        <li class="my-1"><a href="">Wedding Accessories</a></li>
+                        <li class="my-1"><a href="">Mehendi Designs</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Home</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="about.html">About MarriageBazaar</a></li>
+                        <li class="my-1"><a href="career.html">Careers</a></li>
+                        <li class="my-1"><a href="contact.html">Contact Us</a></li>
+                        <li class="my-1"><a href="map.html">Site Map</a></li>
+                        <li class="my-1"><a href="t&c.html">Terms & Conditions</a></li>
+                        <li class="my-1"><a href="p-policy.html">Privacy Policy</a></li>
+                        <li class="my-1"><a href="c-policy.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Wedding Invitation Maker</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="">Wedding Card Designs</a></li>
+                        <li class="my-1"><a href="">Save the Date Temolates</a></li>
+                        <li class="my-1"><a href="">Invitation Video Templates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container footer-drop">
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#first" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Start
+                            Planning</a>
+                    </p>
+                    <div class="collapse ms-4" id="first">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="">Search By Vendor</a></li>
+                            <li class="my-1"><a href="">Search By City</a></li>
+                            <li class="my-1"><a href="">Download Our App</a></li>
+                            <li class="my-1"><a href="">Top Rated Vendors</a></li>
+                            <li class="my-1"><a href="">Destination Wedding</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#second" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Wedding
+                            Ideas</a>
+                    </p>
+                    <div class="collapse ms-4" id="second">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="">Wedding Blog</a></li>
+                            <li class="my-1"><a href="">Wedding Inspiration Gallery</a></li>
+                            <li class="my-1"><a href="">Real Wedding</a></li>
+                            <li class="my-1"><a href="">Submit Wedding</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#third" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Photo
+                            Gallery</a>
+                    </p>
+                    <div class="collapse ms-4" id="third">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="">Bridal Wear</a></li>
+                            <li class="my-1"><a href="">Wedding Jewellery</a></li>
+                            <li class="my-1"><a href="">Bridal Makeup & Hair</a></li>
+                            <li class="my-1"><a href="">Wedding Decor</a></li>
+                            <li class="my-1"><a href="">Wedding Photography</a></li>
+                            <li class="my-1"><a href="">Groom Wear</a></li>
+                            <li class="my-1"><a href="">Invitations & Favors</a></li>
+                            <li class="my-1"><a href="">Wedding Accessories</a></li>
+                            <li class="my-1"><a href="">Mehendi Designs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#fourth" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Home</a>
+                    </p>
+                    <div class="collapse ms-4" id="fourth">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="about.html">About MarriageBazaar</a></li>
+                            <li class="my-1"><a href="career.html">Careers</a></li>
+                            <li class="my-1"><a href="contact.html">Contact Us</a></li>
+                            <li class="my-1"><a href="map.html">Site Map</a></li>
+                            <li class="my-1"><a href="t&c.html">Terms & Conditions</a></li>
+                            <li class="my-1"><a href="p-policy.html">Privacy Policy</a></li>
+                            <li class="my-1"><a href="c-policy.html">Cancellation Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#fifth" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Wedding
+                            Invitation Maker</a>
+                    </p>
+                    <div class="collapse ms-4" id="fifth">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="">Wedding Card Designs</a></li>
+                            <li class="my-1"><a href="">Save the Date Temolates</a></li>
+                            <li class="my-1"><a href="">Invitation Video Templates</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><span>© 2024 . All rights reserved</span></div>
+    </Footer>
+
+    <!-- JS
+    ============================================ -->
+
+    <!-- Jquery Min JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick JS -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

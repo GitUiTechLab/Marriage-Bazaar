@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Marriage Bazaar | Unlock Your Dream Wedding Journey</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <!-- <div id="splashscreen">
+        <div id="ring">
+            <img src="assets/images/logo.png">
+        </div>
+    </div> -->
+
+    <!-- Header -->
+    <Header class="container-fluid p-0">
+        <nav class="navbar-1 d-flex justify-content-center">
+            <div class="m-1">
+                <select id="language" class="form-select rounded py-1" aria-label="Default select example">
+                    <option selected>Select Language</option>
+                    <option value="1">English</option>
+                    <option value="2">Hindi</option>
+                    <option value="3">Gujarati</option>
+                    <option value="4">Marathi</option>
+                    <option value="5">Panjabi</option>
+                    <option value="6">Bangali</option>
+                    <option value="7">Tamil</option>
+                </select>
+            </div>
+            <div class="m-1">
+                <select id="city" class="form-select rounded py-1" aria-label="Default select example">
+                    <option selected>All Cities</option>
+                    <option value="1">Mumbai</option>
+                    <option value="2">Delhi</option>
+                    <option value="3">Bengaluru</option>
+                    <option value="4">Hyderabad</option>
+                    <option value="5">Chennai</option>
+                    <option value="6">Kolkata</option>
+                    <option value="7">Pune</option>
+                    <option value="8">Ahmedabad</option>
+                    <option value="9">Jaipur</option>
+                    <option value="10">Surat</option>
+                </select>
+            </div>
+        </nav>
+        <nav class="navbar-2 navbar bg-pink navbar-expand-lg p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand my-2" href="index.html"><img class="logo-img" src="assets/images/logo.png"
+                        alt="Site Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="venues.html">Venues</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="vendors.html">Vendors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="collection.html">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="real-wed.html">Real Weddings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="blogs.html">Blog</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="form-control">
+                            <button class="btn p-0" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass me-2"></i></button>
+                            <input class="border-0 outline-0" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                    <div class="signup mx-3 p-2">
+                        <!-- <a href="signup.html"><span class=""><i class="fa-regular fa-user"></i> Signup</span></a> -->
+                        <!-- <span class="visually-hidden"><img class="profile-pic" src="assets/images/reviews/pic.jpg" alt=""></span> -->
+                        <div class="dropdown">
+                            <span class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="profile-pic" src="assets/images/dp-pic.jpg" alt="">
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#">
+                                        <h5>User name</h5>
+                                    </a></li>
+                                <hr class="m-0">
+                                <li><a class="dropdown-item" href="user-shortlist.html">Shortlist</a></li>
+                                <li><a class="dropdown-item" href="user-booking.html">Bookings</a></li>
+                                <li><a class="dropdown-item" href="user-settings.html">Settings</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#appModal">Download
+                                        App</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </Header>
+    <!-- Header End-->
+
+    <!-- App Modal -->
+    <div class="modal fade" id="appModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4 class="mb-3">Get Marriage Bazaar on your smartphone</h4>
+                    <h6>Browse Wedding Inspirations | Find Bridal Ideas | Access Planning Checklist</h6>
+                    <img src="assets/images/phone-app.png" alt="">
+                    <p>You will receive an SMS with a link to download the Marriage Bazaar App for Free</p>
+                    <div class="my-3">
+                        <input type="tel" class="form-control" id="" placeholder="Enter your Phone Number" required>
+                    </div>
+                    <button class="btn-pink w-100">Download the App</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Modal -->
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4 class="mb-3">Log out</h4>
+                    <p>Aar you sure you Want to logout?</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-success me-5">No</button>
+                        <button class="btn btn-danger ms-5">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="home-banner">
+        <div class="banner-text">
+            <div>
+                <h1>Unlock Your Dream Wedding Journey</h1>
+                <h3>Discover Inspiration, Connect with Vendors, and Plan with Ease!</h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="m-0">
+                    <select id="vendor" class="form-select py-3 border-0" aria-label="Default select example">
+                        <option selected>Select Vendor Type</option>
+                        <option value="1">Vendor1</option>
+                        <option value="2">Vendor2</option>
+                        <option value="3">Vendor3</option>
+                        <option value="4">Vendor4</option>
+                        <option value="5">Vendor5</option>
+                        <option value="6">Vendor6</option>
+                        <option value="7">Vendor7</option>
+                        <option value="8">Vendor8</option>
+                    </select>
+                </div>
+                <div class="m-0">
+                    <select id="location" class="form-select py-3 border-0" aria-label="Default select example">
+                        <option selected>Select Location</option>
+                        <option value="1">Location1</option>
+                        <option value="2">Location2</option>
+                        <option value="3">Location3</option>
+                        <option value="4">Location4</option>
+                        <option value="5">Location5</option>
+                        <option value="6">Location6</option>
+                        <option value="7">Location7</option>
+                        <option value="8">Location8</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <a href="vendors.html"><button class="btn-pink py-3 px-5">Find</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trending Venue -->
+    <div class="home-venue-area py-5">
+        <div class="section-title text-center pb-4">
+            <h2>Trending Venue Searches</h2>
+            <span>Discover the Most Popular Wedding Venues of the Season!</span>
+        </div>
+        <div class="slider slider1 container text-center">
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/venue/hv1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Star & Above Wedding</h5>
+                        <p class="card-text color-pink">Dhantoli | Mankapura | Chandrakiran Nagar | All Localities</p>
+                        <a href="venues.html" class="btn btn-pink">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/venue/hv1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Star & Above Wedding</h5>
+                        <p class="card-text color-pink">Dhantoli | Mankapura | Chandrakiran Nagar | All Localities</p>
+                        <a href="venues.html" class="btn btn-pink">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/venue/hv1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Star & Above Wedding</h5>
+                        <p class="card-text color-pink">Dhantoli | Mankapura | Chandrakiran Nagar | All Localities</p>
+                        <a href="venues.html" class="btn btn-pink">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/venue/hv1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Star & Above Wedding</h5>
+                        <p class="card-text color-pink">Dhantoli | Mankapura | Chandrakiran Nagar | All Localities</p>
+                        <a href="venues.html" class="btn btn-pink">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/venue/hv1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Star & Above Wedding</h5>
+                        <p class="card-text color-pink">Dhantoli | Mankapura | Chandrakiran Nagar | All Localities</p>
+                        <a href="venues.html" class="btn btn-pink">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="venues.html"><button class="btn-trans mt-4">Explore Trending Venues Now</button></a>
+        </div>
+    </div>
+
+    <!-- Top search -->
+    <div class="container-fluid bg-pink text-center home-top-search py-5">
+        <div class="section-title text-center pb-4">
+            <h2>Top Searches</h2>
+            <span>Explore the Most Sought-After Wedding Trends and Vendors!</span>
+        </div>
+        <div class="slider slider1 container text-center">
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/top-search/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridal Wear</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href="venues.html"><span class="outline color-pink">Read More...</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/top-search/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridal Wear</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href="venues.html"><span class="outline color-pink">Read More...</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/top-search/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridal Wear</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href="venues.html"><span class="outline color-pink">Read More...</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/top-search/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridal Wear</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href="venues.html"><span class="outline color-pink">Read More...</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/top-search/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bridal Wear</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href="venues.html"><span class="outline color-pink">Read More...</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="trends.html"><button class="btn-trans mt-4">Discover Top Wedding Trends</button></a>
+        </div>
+    </div>
+
+    <!-- Theme -->
+    <div class="container-fluid home-wed-theme py-5">
+        <div class="section-title text-center pb-4">
+            <h2>Wedding Categories (Themes)</h2>
+            <span>Explore Diverse and Inspirational Wedding Ideas!</span>
+        </div>
+        <div class="slider slider1 container">
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/theme/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Venues</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href=""><span class="outline color-pink">View Details</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/theme/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Venues</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href=""><span class="outline color-pink">View Details</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/theme/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Venues</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href=""><span class="outline color-pink">View Details</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/theme/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Venues</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href=""><span class="outline color-pink">View Details</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/theme/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Venues</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, maiores.</p>
+                        <a href=""><span class="outline color-pink">View Details</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="themes.html"><button class="btn-trans mt-4">View all Wedding Themes</button></a>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="container home-service mb-5">
+        <div class="row">
+            <div class="col-lg-5 p-5 d-flex flex-column justify-content-center">
+                <h2 class="title">Inhouse Services</h2>
+                <p class="sub-title">Discover Convenient In-House Wedding Planning Services!</p>
+                <a href="inhouse-services.html"><button class="btn-trans my-3">Explore More Services</button></a>
+            </div>
+            <div class="col-lg-7 bg-pink px-0">
+                <div class="triangle"></div>
+                <div class="slider slider2 container text-center py-5">
+                    <div class="slick-div">
+                        <div class="card">
+                            <img src="assets/images/service/1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedsta</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur.</p>
+                                <a href="" class="btn btn-pink w-100">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-div">
+                        <div class="card">
+                            <img src="assets/images/service/1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedsta</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur.</p>
+                                <a href="" class="btn btn-pink w-100">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-div">
+                        <div class="card">
+                            <img src="assets/images/service/1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedsta</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur.</p>
+                                <a href="" class="btn btn-pink w-100">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-div">
+                        <div class="card">
+                            <img src="assets/images/service/1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Wedsta</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur.</p>
+                                <a href="" class="btn btn-pink w-100">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experiences -->
+    <div class="container-fluid bg-pink home-experiences py-5">
+        <div class="section-title text-center pb-4">
+            <h2>Authentic Wedding Experiences</h2>
+            <span>Real Couples, Real Stories: Dive Into Genuine Wedding Experiences!</span>
+        </div>
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-lg-6">
+                    <a href="real-wed.html">
+                        <div class="card">
+                            <img src="assets/images/experience/1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                                <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="real-wed.html">
+                        <div class="card">
+                            <img src="assets/images/experience/2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                                <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="real-wed.html">
+                        <div class="card">
+                            <img src="assets/images/experience/3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                                <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="real-wed.html">
+                        <div class="card">
+                            <img src="assets/images/experience/4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                                <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collection -->
+    <div class="container-fluid home-collection py-5">
+        <div class="section-title text-center pb-4">
+            <h2>Picture Collection to Explore</h2>
+            <span>Get Inspired with Stunning Wedding Photography!</span>
+        </div>
+        <div class="slider slider3 container">
+            <div class="slick-div">
+                <a href="collection.html">
+                    <div class="card">
+                        <img src="assets/images/collection/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridal Lehenga</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="slick-div">
+                <a href="collection.html">
+                    <div class="card">
+                        <img src="assets/images/collection/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridal Lehenga</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="slick-div">
+                <a href="collection.html">
+                    <div class="card">
+                        <img src="assets/images/collection/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridal Lehenga</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="slick-div">
+                <a href="collection.html">
+                    <div class="card">
+                        <img src="assets/images/collection/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridal Lehenga</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="slick-div">
+                <a href="collection.html">
+                    <div class="card">
+                        <img src="assets/images/collection/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridal Lehenga</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="slick-div">
+                <a href="collection.html">
+                    <div class="card">
+                        <img src="assets/images/collection/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bridal Lehenga</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="text-center">
+            <a href="collection.html"><button class="btn-trans mt-4">Explore More Collection</button></a>
+        </div>
+    </div>
+
+    <!-- Vendors -->
+    <div class="container-fluid bg-pink home-vendor py-5">
+        <div class="section-title text-center pb-4">
+            <h2>Featured Vendors</h2>
+            <span>Discover Top-Rated Wedding Service Providers!</span>
+        </div>
+        <div class="slider slider1 container">
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/vendor/home-vendor1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                        <a class="outline color-pink" href="wed-trend-detail.html">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/vendor/home-vendor1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                        <a class="outline color-pink" href="wed-trend-detail.html">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/vendor/home-vendor1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                        <a class="outline color-pink" href="wed-trend-detail.html">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/vendor/home-vendor1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                        <a class="outline color-pink" href="wed-trend-detail.html">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-div">
+                <div class="card">
+                    <img src="assets/images/vendor/home-vendor1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
+                        <p>Lorem ipsum dolor sit amet lorem consectetur.</p>
+                        <a class="outline color-pink" href="wed-trend-detail.html">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="container-fluid p-5 home-blog">
+        <div class="section-title text-center pb-3">
+            <h2>Latest Blogs</h2>
+            <span>Stay Updated with the Latest Wedding Tips and Trends!</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <a href="blog-detail.html">
+                        <img src="assets/images/blog/1.png" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body ps-0">
+                        <span class="mb-3"><i class="fa-regular fa-calendar"></i> 21 May, 2024</span>
+                        <h2 class="card-title">Card title</h2>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex align-items-center">
+                            <a class="outline color-pink" href="blog-detail.html">Read More<i
+                                    class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <a href="blog-detail.html">
+                                    <img src="assets/images/blog/1.png" class="img-fluid rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <span class="mb-2"><i class="fa-regular fa-calendar"></i> 21 May, 2024</span>
+                                    <h2 class="card-title">Card title</h2>
+                                    <p class="card-text">This is a wider card with supporting text below as a
+                                        natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <a class="outline color-pink" href="blog-detail.html">Read More<i
+                                            class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <a href="blog-detail.html">
+                                    <img src="assets/images/blog/1.png" class="img-fluid rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <span class="mb-2"><i class="fa-regular fa-calendar"></i> 21 May, 2024</span>
+                                    <h2 class="card-title">Card title</h2>
+                                    <p class="card-text">This is a wider card with supporting text below as a
+                                        natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <a class="outline color-pink" href="blog-detail.html">Read More<i
+                                            class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card mb-3 h-75">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <a href="blog-detail.html">
+                                    <img src="assets/images/blog/1.png" class="img-fluid rounded-start" alt="...">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <span class="mb-2"><i class="fa-regular fa-calendar"></i> 21 May, 2024</span>
+                                    <h2 class="card-title">Card title</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Odit, omnis.</p>
+                                    <a class="outline color-pink" href="blog-detail.html">Read More<i
+                                            class="fa-solid fa-arrow-right-long ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="blogs.html"><button class="btn-trans mt-5">Read More Blog</button></a>
+        </div>
+    </div>
+
+    <!-- Submit Wedding -->
+    <div class="container bg-pink text-center px-5 mb-5 home-submit-wed">
+        <div class="border-bottom border-2 border-black py-4">
+            <h3 class="text-center fw-semibold py-1">Winter Wonderiand Decor Ideas that Caught
+                Out Eye!</h3>
+            <a href="submit-wed1.html"><button class="btn-pink my-3" type="submit">Submit Wedding</button></a>
+        </div>
+        <div class="py-4">
+            <h3 class="text-center fw-semibold py-1">Get more wedding ideas in your inbox</h3>
+            <form action="">
+                <input class="form-control w-25 mx-auto mt-4 text-center" type="email" name="" id=""
+                    placeholder="Enter your email"><br>
+                <a href=""><button type="submit" class="btn-pink mb-3 px-5">I want More</button></a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <Footer>
+        <div class="footer-1 py-2">
+            <div class="row">
+                <h2 class="mb-5">MarriageBazaar - Your Personal Wedding Organizer</h2>
+            </div>
+            <!-- newsletter -->
+            <form action="">
+                <div class="newsletter">
+                    <div>
+                        <h4>Subscribe to our newsletter</h4>
+                        <span>Share your email & phone number to <br>
+                            stay updated with our latest news.</span>
+                    </div>
+                    <div>
+                        <span>Email:</span> <br>
+                        <input type="email" name="" id="" placeholder="example@email.com">
+                    </div>
+                    <div>
+                        <span>Phone:</span> <br>
+                        <input type="tel" name="" id="" placeholder="+91 1010000666">
+                    </div>
+                    <div>
+                        <button class="subscribe-btn btn-pink">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer-2 row my-4 py-2">
+            <div class="col-lg-5">
+                <h4 class="mb-3">Contact us to get best deals</h4>
+                <div class="my-3">
+                    <h6 class="fw-semibold">For Vendors</h6>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-envelope me-2"></i> vendor@marrigebazaar.com</a>
+                    </p>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-phone me-2"></i> +91 99999-99991</a></p>
+                </div>
+                <div class="my-3">
+                    <h6 class="fw-semibold">For Users</h6>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-envelope me-2"></i> user@marrigebazaar.com</a></p>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-phone me-2"></i> +91 99999-99992</a></p>
+                </div>
+                <div class="my-3">
+                    <h6 class="fw-semibold">Registered Address</h6>
+                    <p class="my-1"><a href=""><i class="fa-solid fa-location-dot me-2"></i> Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Dignissimos, deleniti.</a></p>
+                </div>
+            </div>
+            <div class="col-lg-7 my-3">
+                <div class="float-start">
+                    <h5>Follow us on:</h5>
+                    <ul class="p-0">
+                        <li class="my-2"><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/footer/facebook.png"
+                                        alt="">
+                                </div><span>Facebook</span>
+                            </a></li>
+                        <li class="my-2"><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/footer/twitter.png" alt="">
+                                </div><span>Twitter</span>
+                            </a></li>
+                        <li class="my-2"><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/footer/pinterest.png"
+                                        alt=""></div><span>Pinterest</span>
+                            </a></li>
+                        <li class="my-2"><a href="">
+                                <div class="v-img-div"><img class="v-img" src="assets/images/footer/instagram.png"
+                                        alt=""></div><span>Instagram</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="float-end">
+                    <h5>Get The MarriageBazaar</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><img class="get-img" src="assets/images/footer/apple-app-store-logo.jpg"
+                                alt=""></li>
+                        <li class="my-1"><img class="get-img" src="assets/images/footer/get_in_on_google.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-3 row py-2">
+            <div class="row footer-link">
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Start Planning</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="">Search By Vendor</a></li>
+                        <li class="my-1"><a href="">Search By City</a></li>
+                        <li class="my-1"><a href="">Download Our App</a></li>
+                        <li class="my-1"><a href="">Top Rated Vendors</a></li>
+                        <li class="my-1"><a href="">Destination Wedding</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Wedding Ideas</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="">Wedding Blog</a></li>
+                        <li class="my-1"><a href="">Wedding Inspiration Gallery</a></li>
+                        <li class="my-1"><a href="">Real Wedding</a></li>
+                        <li class="my-1"><a href="">Submit Wedding</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Photo Gallery</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="">Bridal Wear</a></li>
+                        <li class="my-1"><a href="">Wedding Jewellery</a></li>
+                        <li class="my-1"><a href="">Bridal Makeup & Hair</a></li>
+                        <li class="my-1"><a href="">Wedding Decor</a></li>
+                        <li class="my-1"><a href="">Wedding Photography</a></li>
+                        <li class="my-1"><a href="">Groom Wear</a></li>
+                        <li class="my-1"><a href="">Invitations & Favors</a></li>
+                        <li class="my-1"><a href="">Wedding Accessories</a></li>
+                        <li class="my-1"><a href="">Mehendi Designs</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Home</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="about.html">About MarriageBazaar</a></li>
+                        <li class="my-1"><a href="career.html">Careers</a></li>
+                        <li class="my-1"><a href="contact.html">Contact Us</a></li>
+                        <li class="my-1"><a href="map.html">Site Map</a></li>
+                        <li class="my-1"><a href="t&c.html">Terms & Conditions</a></li>
+                        <li class="my-1"><a href="p-policy.html">Privacy Policy</a></li>
+                        <li class="my-1"><a href="c-policy.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="fw-semibold mb-3">Wedding Invitation Maker</h5>
+                    <ul class="p-0">
+                        <li class="my-1"><a href="">Wedding Card Designs</a></li>
+                        <li class="my-1"><a href="">Save the Date Temolates</a></li>
+                        <li class="my-1"><a href="">Invitation Video Templates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container footer-drop">
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#first" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Start
+                            Planning</a>
+                    </p>
+                    <div class="collapse ms-4" id="first">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="">Search By Vendor</a></li>
+                            <li class="my-1"><a href="">Search By City</a></li>
+                            <li class="my-1"><a href="">Download Our App</a></li>
+                            <li class="my-1"><a href="">Top Rated Vendors</a></li>
+                            <li class="my-1"><a href="">Destination Wedding</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#second" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Wedding
+                            Ideas</a>
+                    </p>
+                    <div class="collapse ms-4" id="second">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="">Wedding Blog</a></li>
+                            <li class="my-1"><a href="">Wedding Inspiration Gallery</a></li>
+                            <li class="my-1"><a href="">Real Wedding</a></li>
+                            <li class="my-1"><a href="">Submit Wedding</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#third" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Photo
+                            Gallery</a>
+                    </p>
+                    <div class="collapse ms-4" id="third">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="">Bridal Wear</a></li>
+                            <li class="my-1"><a href="">Wedding Jewellery</a></li>
+                            <li class="my-1"><a href="">Bridal Makeup & Hair</a></li>
+                            <li class="my-1"><a href="">Wedding Decor</a></li>
+                            <li class="my-1"><a href="">Wedding Photography</a></li>
+                            <li class="my-1"><a href="">Groom Wear</a></li>
+                            <li class="my-1"><a href="">Invitations & Favors</a></li>
+                            <li class="my-1"><a href="">Wedding Accessories</a></li>
+                            <li class="my-1"><a href="">Mehendi Designs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#fourth" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Home</a>
+                    </p>
+                    <div class="collapse ms-4" id="fourth">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="about.html">About MarriageBazaar</a></li>
+                            <li class="my-1"><a href="career.html">Careers</a></li>
+                            <li class="my-1"><a href="contact.html">Contact Us</a></li>
+                            <li class="my-1"><a href="map.html">Site Map</a></li>
+                            <li class="my-1"><a href="t&c.html">Terms & Conditions</a></li>
+                            <li class="my-1"><a href="p-policy.html">Privacy Policy</a></li>
+                            <li class="my-1"><a href="c-policy.html">Cancellation Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="fs-5" data-bs-toggle="collapse" href="#fifth" role="button" aria-expanded="false"
+                            aria-controls="collapseExample"><i class="fa-solid fa-chevron-right me-2"></i> Wedding
+                            Invitation Maker</a>
+                    </p>
+                    <div class="collapse ms-4" id="fifth">
+                        <ul class="ps-2">
+                            <li class="my-1"><a href="">Wedding Card Designs</a></li>
+                            <li class="my-1"><a href="">Save the Date Temolates</a></li>
+                            <li class="my-1"><a href="">Invitation Video Templates</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><span>© 2024 . All rights reserved</span></div>
+    </Footer>
+
+    <!-- JS
+    ============================================ -->
+
+    <!-- Jquery Min JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick JS -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

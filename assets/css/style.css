@@ -1,0 +1,1134 @@
+/*
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS
+** - Background CSS
+** - Color CSS
+** - Border CSS
+** - Buttons CSS
+** - Card CSS
+** - Pagination CSS
+** - Slick-slider CSS
+** - Preloader CSS
+** - Navbar CSS
+** - Index CSS
+** - Search-page CSS
+** - Venue CSS
+** - Vendor CSS
+** - Photos CSS
+** - Real-wed CSS
+** - Blog CSS
+** - E-invites CSS
+** - Signup-Signin CSS
+** - Detail-page CSS
+** - Submit-wed CSS
+** - Portfolio CSS
+** - Reviews CSS
+** - FAQs CSS
+** - Footer CSS
+** - User-Dashboard CSS
+** - Vendor-Dashboard CSS
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*==============================
+    Default CSS
+=================================*/
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --color-primary1: #4C0029;
+    --color-primary2: #7F0044;
+    --color-primary3: #B20060;
+    --color-primary4: #CB316E;
+    --color-primary5: #E5097F;
+    --color-primary6: #F44F90;
+    --color-primary7: #FF86B6;
+    --color-primary8: #FFBAD5;
+    --color-primary9: #FFEEF4;
+    --color-primary10: #FFEEF4;
+    --heading-color1: #062129;
+    --heading-color2: #3E3E3E;
+    --heading-color3: #878787;
+    --heading-color4: #D7D7D7;
+    --heading-color5: #FFFFFF;
+
+    /* box-shadow */
+    --box-shadow1: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --box-shadow2: 0 4px 8px rgba(0, 0, 0, 0.5);
+    --box-shadow3: 0 0 8px rgba(0, 0, 0, 0.2);
+    --box-shadow4: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.border-0 {
+    border: none;
+}
+
+.outline-0 {
+    outline: none;
+}
+
+.outline {
+    position: relative;
+    border-bottom: 0px solid transparent;
+}
+
+.outline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    height: 4px;
+    width: 0;
+    background-color: var(--color-primary5);
+    transition: width 0.3s ease-in-out;
+}
+
+.outline:hover::after {
+    width: 100%;
+}
+
+.form-select {
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    cursor: pointer;
+    background-color: var(--color-primary5);
+    color: var(--color-primary5);
+    border-color: var(--color-primary5);
+}
+
+.cursor-p {
+    cursor: pointer;
+}
+
+/*==============================
+    Background CSS
+=================================*/
+
+.bg-pink {
+    background-color: var(--color-primary10);
+}
+
+.bg-dark-pink {
+    background-color: var(--color-primary5);
+    color: #fff;
+}
+
+.bg-trans {
+    background-color: transparent;
+}
+
+.bg-gray {
+    background-color: var(--heading-color4);
+}
+
+/*==============================
+    Color CSS
+=================================*/
+
+.color-white {
+    color: #fff;
+}
+
+.color-pink {
+    color: var(--color-primary5);
+}
+
+.color-blue {
+    color: #247CA8;
+}
+
+/*==============================
+    Border CSS
+=================================*/
+
+.brb-pink {
+    border-bottom: 2px solid var(--color-primary5);
+}
+
+.brb-gray {
+    border-bottom: 2px solid gray;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*==============================
+    Buttons CSS
+=================================*/
+
+.btn-pink {
+    background-color: var(--color-primary5);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: .8rem 2rem;
+}
+
+.btn-pink:hover {
+    background-color: var(--color-primary3);
+    color: white;
+}
+
+.btn-trans {
+    background-color: transparent;
+    border: 2px solid var(--color-primary6);
+    border-radius: 4px;
+    padding: .7rem 2rem;
+}
+
+.btn-trans:hover {
+    background-color: var(--color-primary8);
+    color: var(--color-primary2);
+}
+
+/*==============================
+    Card CSS
+=================================*/
+
+.card {
+    border: none;
+    box-shadow: var(--box-shadow1);
+    margin: .6rem 1rem;
+    padding: .8rem;
+    width: 24rem;
+}
+
+.card:hover {
+    box-shadow: var(--box-shadow2);
+}
+
+/*==============================
+    Pagination CSS
+=================================*/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination .page-item:hover>.page-link {
+    background-color: var(--color-primary5);
+    color: white;
+}
+
+.page-link {
+    color: black;
+    margin: auto 10px;
+    background-color: var();
+    border-radius: 4px;
+}
+
+.pagination .prev-arr>.page-link,
+.pagination .next-arr>.page-link {
+    background-color: var(--color-primary9);
+}
+
+/*==============================
+    Slick-slider CSS
+=================================*/
+
+.slider.slick-div {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.slick-dots li {
+    margin: 20px 5px;
+    list-style: none;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 2px solid pink;
+    border-radius: 50%;
+    background-color: pink;
+}
+
+.slick-dots li button::before {
+    font-size: 0;
+}
+
+.slick-dots .slick-active button {
+    border-color: var(--color-primary3);
+    background-color: var(--color-primary3);
+}
+
+.slick-arrow {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.slick-arrow:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+}
+
+/*==============================
+    Preloader CSS
+=================================*/
+
+#splashscreen {
+    display: flex;
+    background: var(--color-primary9);
+    background-size: 15%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+}
+
+#ring {
+    background: url(../images/ringimg.webp) no-repeat center center/cover;
+    border-radius: 50%;
+    padding: 80px 40px;
+}
+
+#ring img {
+    width: 120px !important;
+}
+
+/*==============================
+    Navbar CSS
+=================================*/
+
+.navbar-1 {
+    background-color: var(--color-primary7);
+}
+
+.navbar-1 .form-select {
+    border: none;
+}
+
+/* .navbar-1 .left {
+    flex: 0 0 auto;
+}
+
+.navbar-1 .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.navbar-2 .nav-link {
+    color: #000;
+}
+
+.navbar-2 li {
+    margin: 0 .3rem;
+    padding: 0;
+}
+
+.navbar-2 .nav-link {
+    padding: 1rem !important;
+}
+
+.navbar-2 .nav-link:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.navbar-2 .active .nav-link {
+    background-color: white;
+    color: var(--color-heading);
+    border-bottom: 4px solid var(--color-primary5);
+}
+
+.navbar-2 .signup:hover {
+    background-color: var(--color-primary8);
+    cursor: pointer;
+    border-radius: 8px;
+    color: var(--color-primary2);
+}
+
+.navbar-2 .signup i {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.navbar-2 .signup:hover i {
+    border: 1px solid var(--color-primary2);
+}
+
+.navbar-3 .form-select {
+    border: none;
+    border-radius: 0;
+    outline: none !important;
+}
+
+/*==============================
+    Index CSS
+=================================*/
+
+.home-banner {
+    position: relative;
+    height: 65vh;
+    background: url(../images/home/banner-bg.png) center center/cover;
+}
+
+.home-banner .banner-text {
+    position: absolute;
+    color: #fff;
+    transform: translate(55%, 140%);
+    width: 50%;
+}
+
+.home-banner .banner-text .form-select,
+.home-banner .banner-text .btn-pink {
+    border-radius: 0;
+}
+
+/* venue-area */
+
+.home-venue-area img {
+    height: 125px;
+    width: 125px;
+    margin: 1rem auto;
+}
+
+.home-venue-area .card-text {
+    color: var(--color-primary5);
+    height: 100px;
+}
+
+/* Top-search */
+
+.home-top-search .card {
+    padding: 0;
+    background: none;
+    height: 350px;
+    width: 24rem;
+    box-shadow: none;
+}
+
+.home-top-search .card img {
+    position: relative;
+    height: 250px;
+}
+
+.home-top-search .card .card-body {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    top: 200px;
+    margin: auto 5%;
+    text-align: left;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Theme */
+
+.themes .card {
+    padding: 0;
+    background: none;
+    border-radius: 0 0 4px 4px;
+    width: 13rem;
+    text-align: center;
+}
+
+/* Service */
+
+.home-service {
+    border: 2px solid var(--heading-color4);
+    border-radius: 4px;
+}
+
+.home-service .bg-pink {
+    position: relative;
+    overflow: hidden;
+}
+
+.triangle {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border-top: 15.7rem solid transparent;
+    border-left: 15rem solid white;
+    border-bottom: 15.7rem solid transparent;
+    z-index: 2;
+}
+
+.home-service .bg-pink .slider {
+    z-index: 3;
+}
+
+.home-service .card {
+    padding: 0;
+    background: none;
+    border-radius: 0 0 4px 4px;
+    width: 13rem;
+}
+
+.home-service .card img {
+    height: 195px;
+    border-radius: 0;
+}
+
+.home-service .slick-prev {
+    left: 1%;
+}
+
+.home-service .slick-next {
+    right: 1%;
+}
+
+.inhouse-services .banner img {
+    height: 8rem;
+    margin: 1rem;
+}
+
+.paymentForm input {
+    /* display: none; */
+}
+
+.paymentForm label {
+    cursor: pointer;
+}
+
+/* experiences */
+
+.home-experiences .card {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.home-experiences .card img {
+    position: relative;
+    height: 200px;
+    width: 300px;
+}
+
+.home-experiences .card-body {
+    position: absolute;
+    background-color: white;
+    top: 30%;
+    height: 70%;
+    left: 50%;
+    width: 20vw;
+}
+
+@media (max-width: 900px) {
+    .home-experiences .card-body {
+        height: 70%;
+        left: 62%;
+        width: 30vw;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .home-experiences img {
+        left: -10%;
+        width: 200px;
+    }
+
+    .home-experiences .card-body {
+        top: 60%;
+        height: 50%;
+        left: 50%;
+        width: 50vw;
+    }
+
+    .home-experiences .card-body p {
+        display: none;
+    }
+}
+
+/* Collection */
+
+.home-collection .card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: var(--color-primary10);
+    width: 270px;
+    height: 280px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.home-collection .card img {
+    position: relative;
+    height: 240px;
+    width: 230px;
+    z-index: 100;
+    top: -60px;
+    border-radius: 0;
+}
+
+.home-collection .card .card-body {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Featured Vendors */
+
+.home-vendor .card {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    float: left;
+    padding: 10px;
+    margin-bottom: 120px;
+}
+
+.home-vendor img {
+    height: 200px;
+    width: 250px;
+}
+
+.home-vendor .card-body {
+    position: absolute;
+    background-color: white;
+    top: 150px;
+    height: 150px;
+    left: 150px;
+    width: 250px;
+}
+
+/* blog */
+
+.home-blog .card {
+    padding: 0;
+    box-shadow: none;
+    width: 100%;
+}
+
+/*==============================
+    Search-page CSS
+=================================*/
+
+.title-bar {
+    color: var(--heading-color3);
+}
+
+.section-title .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-75%);
+}
+
+.section-title .form-control {
+    width: 150%;
+}
+
+.cities {
+    justify-content: center;
+}
+
+.cities .col {
+    margin: 1rem auto;
+}
+
+.cities img {
+    border-radius: 4px;
+    height: 150px;
+    width: 185px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Contact us */
+
+.contact-form {
+    position: relative;
+    top: -120px;
+}
+
+/*==============================
+    Photos CSS
+=================================*/
+
+.photo-category img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.colors button:hover {
+    background-color: var(--color-primary6);
+    border-color: var(--color-primary6);
+}
+
+.gallery .card {
+    padding: 0;
+    width: 24rem;
+}
+
+.gallery .card img {
+    height: 250px;
+}
+
+/*==============================
+    Real-wed CSS
+=================================*/
+
+.real-wed-1 img {
+    height: 250px;
+}
+
+/*==============================
+    Blog CSS
+=================================*/
+
+.blogs p,
+.blog-detail p {
+    text-align: justify;
+}
+
+.tage {
+    background: url(../images/blog/tage.png);
+    height: 100%;
+    color: white;
+}
+
+.tagged-vendor .card {
+    width: 20rem;
+    padding: 1rem;
+}
+
+.tagged-vendor .card img {
+    height: 50px;
+    width: 60px;
+    margin: auto;
+}
+
+/* ActiveContainer */
+
+.activeContainer {
+    border-bottom: 2px solid var(--color-primary5);
+    color: var(--color-primary5);
+}
+
+
+/*==============================
+    E-invites CSS
+=================================*/
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .custom .btn-trans {
+        font-size: .8rem !important;
+        margin: .2rem !important;
+        /* padding: .5rem !important; */
+    }
+
+    .custom img {
+        width: 90vw !important;
+    }
+}
+
+/*==============================
+    Signup-Signin CSS
+=================================*/
+
+.signup-signin .left {
+    margin-top: 2rem;
+}
+
+.signup-signin-bg {
+    /* height: calc(100vh - 100px);  */
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-signin-bg img {
+    max-height: 100%;
+    width: auto;
+}
+
+/*==============================
+    Detail-page CSS
+=================================*/
+
+.banner-with-content {
+    justify-content: center;
+}
+
+.banner-with-content img {
+    height: 65vh;
+}
+
+.banner-with-content .banner-content {
+    position: relative;
+    top: -10vh;
+    margin-bottom: -10vh;
+}
+
+.banner-with-content .banner-content .banner-card {
+    box-shadow: var(--box-shadow1);
+    background-color: #fff;
+    width: 45%;
+    margin: 0 auto ;
+}
+
+.form-check-pink .form-check-input:checked {
+    background-color: var(--color-primary5);
+    border-color: var(--color-primary5);
+}
+
+/*==============================
+    Submit-wed CSS
+=================================*/
+
+.bar {
+    height: 8px;
+    width: 30%;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+}
+
+.bar-fill {
+    background-color: var(--color-primary6);
+}
+
+.upload__inputfile {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.upload__btn {
+    cursor: pointer;
+}
+
+.upload__btn-box {
+    margin-bottom: 10px;
+}
+
+.upload__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upload__img-box {
+    width: 100px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+.upload__img-close {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    font-size: 12px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.upload__img-close:after {
+    content: '\2716';
+    font-size: 14px;
+    color: white;
+}
+
+.img-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.submit-wed .left {
+    width: 20vw;
+}
+.submit-wed .right {
+    width: 75vw;
+}
+.submit-wed .right img {
+    height: 150px;
+    width: 200px;
+}
+/*==============================
+    Portfolio CSS
+=================================*/
+
+.portfolio .active {
+    color: var(--color-primary5);
+}
+
+.portfolio img {
+    /* height: 295px;
+    width: 302px; */
+    width: 23%;
+}
+
+/*==============================
+    Reviews CSS
+=================================*/
+
+.testimonial .div1 {
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-top: 50px;
+}
+
+.testimonial .div1 .quote,
+.testimonial .div1 .angle-arr {
+    float: right;
+}
+
+
+.testimonial .div1 .angle-arr i {
+    padding: 13px 16px;
+}
+
+.testimonial .div1 .angle-arr i:hover {
+    background-color: var(--color-primary5);
+    border-radius: 50%;
+    color: white;
+}
+
+.testimonial .div2 {
+    position: absolute;
+    background-color: var(--color-primary5);
+    color: white;
+    left: 45%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 8%;
+    height: 90%;
+}
+
+/* Write-review */
+
+.rating {
+    margin-top: 40px;
+    float: left;
+}
+
+.rating>label {
+    color: rgba(128, 128, 128, 0.4);
+    float: right;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 2em;
+    font-family: FontAwesome;
+    content: "\f005";
+    display: inline-block;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>input:checked~label,
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #F79426;
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+.rating>input:checked~label:hover~label {
+    color: #FECE31;
+}
+
+.write-review .fa-star,
+.reviews .fa-star {
+    color: #F79426;
+    font-size: 1.5rem;
+    margin: auto 2px;
+}
+
+/*==============================
+    FAQs CSS
+=================================*/
+
+.faq-div {
+    box-shadow: var(--box-shadow4);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    vertical-align: middle;
+}
+
+.faq-div:hover {
+    box-shadow: var(--box-shadow2);
+}
+
+.faq-div .que {
+    margin: auto;
+}
+
+.faq-div .collapse .ans {
+    border-left: 4px solid var(--color-primary5);
+}
+
+/*==============================
+    Footer CSS
+=================================*/
+
+Footer {
+    width: 100%;
+    padding: 3rem;
+    background-color: var(--color-primary10);
+}
+
+Footer a:hover {
+    color: var(--color-primary5);
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.newsletter input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--heading-color4);
+    outline: none;
+    padding: .3rem 0;
+}
+
+.footer-2 {
+    border-bottom: 3px solid var(--heading-color4);
+}
+
+.v-img-div {
+    display: inline-block;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.v-img {
+    height: 30px;
+}
+
+.get-img {
+    height: 65px;
+    width: 100%;
+}
+
+.footer-3 .footer-drop {
+    display: none;
+}
+
+.footer-3 .footer-drop .collapse {
+    border-left: 4px solid var(--color-primary5);
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .footer-link {
+        display: none;
+    }
+
+    .footer-3 .footer-drop {
+        display: block;
+    }
+
+    Footer .float-end {
+        float: left !important;
+    }
+
+    .blog-div {
+        padding: 2rem !important;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    Footer {
+        padding: 2rem;
+    }
+
+    .get-img {
+        height: 50px;
+        width: 80%;
+    }
+}
+
+/*==============================
+    User-Dashboard CSS
+=================================*/
+
+.user-dashboard .user-shortlist .card img {
+    height: 150px;
+    width: 200px;
+}
