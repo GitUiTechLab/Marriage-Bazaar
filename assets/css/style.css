@@ -172,6 +172,13 @@ li {
     color: #247CA8;
 }
 
+.color-green {
+    color: green !important;
+}
+
+.color-red {
+    color: red !important;
+}
 /*==============================
     Border CSS
 =================================*/
@@ -830,7 +837,7 @@ li {
     box-shadow: var(--box-shadow1);
     background-color: #fff;
     width: 45%;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
 
 .form-check-pink .form-check-input:checked {
@@ -912,13 +919,16 @@ li {
 .submit-wed .left {
     width: 20vw;
 }
+
 .submit-wed .right {
     width: 75vw;
 }
+
 .submit-wed .right img {
     height: 150px;
     width: 200px;
 }
+
 /*==============================
     Portfolio CSS
 =================================*/
@@ -1131,4 +1141,55 @@ Footer a:hover {
 .user-dashboard .user-shortlist .card img {
     height: 150px;
     width: 200px;
+}
+
+/*==============================
+    Vendor-Dashboard CSS
+=================================*/
+
+@media screen and (min-width: 992px) {
+
+    .vertical-navbar .container-fluid,
+    .vertical-navbar.navbar-expand-lg .navbar-collapse,
+    .vertical-navbar.navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vertical-navbar {
+        width: 20vw;
+        height: 100%;
+        align-items: flex-start;
+        margin-top: 68px;
+        /* padding-top: 70px; */
+    }
+
+    .navbar-brand {
+        margin-left: 0.5rem;
+    }
+
+    .vendor-dashboard {
+        margin: 70px 0 50px 0 !important; 
+        padding-left: 21vw !important;
+    }
+}
+
+.v-dashboard-header {
+    position: fixed;
+    top: 0;
+}
+
+.vertical-navbar .nav-item .active {
+    color: var(--color-primary5);
+}
+
+.vertical-navbar .nav-item i {
+    width: 30px;
+}
+
+.v-dashboard-footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    z-index: 1000;
 }

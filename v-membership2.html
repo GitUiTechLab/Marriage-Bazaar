@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Marriage Bazaar | Unlock Your Dream Wedding Journey</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <!-- <div id="splashscreen">
+        <div id="ring">
+            <img src="assets/images/logo.png">
+        </div>
+    </div> -->
+
+    <!-- Header -->
+    <Header class="v-dashboard-header container-fluid p-0">
+        <nav class="navbar-2 brb-pink navbar bg-pink navbar-expand-lg p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand my-2" href="index.html"><img class="logo-img" src="assets/images/logo.png"
+                        alt="Site Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar2"
+                    aria-controls="navbar2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar2">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="venues.html">Venues</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="vendors.html">Vendors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="collection.html">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="real-wed.html">Real Weddings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link outline" aria-current="page" href="blogs.html">Blog</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="form-control">
+                            <button class="btn p-0" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass me-2"></i></button>
+                            <input class="border-0 outline-0" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </form>
+                    <div class="signup mx-3 p-2">
+                        <span><img class="profile-pic" src="assets/images/dp-pic.jpg" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </Header>
+    <!-- Header End-->
+
+    <div class="p-3 mt-5">
+        <div class="container py-3">
+            <div class="section-title">
+                <h2>Payment Options</h2>
+                <span>Payment Amount: <span>₹ 200</span></span>
+            </div>
+            <!-- Form -->
+            <div class="my-4">
+                <form action="">
+                    <h5>Choose Payment Method</h5>
+                    <div class="paymentForm d-flex justify-content-around">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMode" value="amazon" id="amazon">
+                            <label class="form-check-label" for="amazon">
+                                <img class="border p-2" src="assets/images/payment/amazon.png" alt="">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMode" value="paypal" id="paypal">
+                            <label class="form-check-label" for="paypal">
+                                <img class="border p-2" src="assets/images/payment/paypal.png" alt="">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMode" value="visa" id="visa">
+                            <label class="form-check-label" for="visa">
+                                <img class="border p-2" src="assets/images/payment/visa.png" alt="">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMode" value="paytm" id="paytm">
+                            <label class="form-check-label" for="paytm">
+                                <img class="border p-2" src="assets/images/payment/paytm.png" alt="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="my-4">
+                        <h5>Credit Card Information</h5>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="my-3">
+                                    <label for="" class="form-label"><span class="color-pink">*</span>Card holder
+                                        Name</label>
+                                    <input type="text" class="form-control" id="" placeholder="Enter name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="my-3">
+                                    <label for="" class="form-label"><span class="color-pink">*</span>Card
+                                        Number</label>
+                                    <input type="number" class="form-control" id="" placeholder="Enter card number"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="my-3">
+                                    <label for="" class="form-label"><span class="color-pink">*</span>Expiry
+                                        Date</label>
+                                    <input type="date" class="form-control" id="" placeholder="Enter card number"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="my-3">
+                                    <label for="" class="form-label"><span class="color-pink">*</span>CVV</label>
+                                    <input type="number" class="form-control" id="" placeholder="Enter card number"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Save My Details For Future Purchases
+                            </label>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button class="btn-pink" data-bs-toggle="modal"
+                                data-bs-target="#ConfirmPaymentModal">Confirm
+                                Payment</button>
+                        </div>
+                        <!-- Confirm Payment modal -->
+                        <div class="modal fade" id="ConfirmPaymentModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <p><i class="fa-solid fa-circle-check color-pink fs-1"></i></p>
+                                        <h4>Payment successful!</h4>
+                                        <p>Your registration is successful! We look forward to your participation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JS
+    ============================================ -->
+
+    <!-- Jquery Min JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick JS -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
