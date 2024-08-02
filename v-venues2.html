@@ -30,11 +30,11 @@
 <body>
 
     <!-- Preloader -->
-    <!-- <div id="splashscreen">
+    <div id="splashscreen">
         <div id="ring">
             <img src="assets/images/logo.png">
         </div>
-    </div> -->
+    </div>
 
     <!-- Header -->
     <Header class="v-dashboard-header container-fluid p-0">
@@ -125,7 +125,8 @@
                                 class="fa-solid fa-money-check-dollar"></i> Payments</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="v-venues.html"><i class="fa-solid fa-hotel"></i>
+                        <a class="nav-link active" aria-current="page" href="v-venues.html"><i
+                                class="fa-solid fa-hotel"></i>
                             Venues</a>
                     </li>
                     <li class="nav-item">
@@ -134,7 +135,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="v-setting.html"><i class="fa-solid fa-gear"></i>
-                            Setting</a>
+                            Settings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link cursor-p" aria-current="page" data-bs-toggle="modal"
@@ -165,21 +166,14 @@
     </div>
 
     <div class="vendor-dashboard p-3 m-0">
-        <div class="content">
-            <div class="d-flex justify-content-between p-3 align-items-center border">
-                <h3>Venues</h3>
-                <form class="d-flex" role="search">
-                    <div class="form-control">
-                        <button class="btn p-0" type="submit"><i class="fa-solid fa-magnifying-glass me-2"></i></button>
-                        <input class="border-0 outline-0" type="search" placeholder="Search" aria-label="Search">
-                    </div>
-                </form>
-                <span><i class="fa-regular fa-bell fs-4"></i></span>
+        <div class="content v-venues">
+            <div>
+                <h3>Add Venue</h3>
             </div>
-           <div class="border my-3 p-3">
-                <h4 class="bg-pink p-3">Venue Details</h4>
-                <div>
-                    <form action="">
+            <form action="">
+                <div class="border my-3 p-3">
+                    <h4 class="bg-pink p-3">Venue Details</h4>
+                    <div class="form-content">
                         <div class="my-4">
                             <label for="" class="form-label">Venue Name</label>
                             <input type="text" class="form-control" id="" placeholder="Enter Venue Name" required>
@@ -195,7 +189,7 @@
                                 <option value="1">Category 1</option>
                                 <option value="2">Category 2</option>
                                 <option value="3">Category 3</option>
-                                
+
                             </select>
                         </div>
                         <div class="my-4">
@@ -250,36 +244,77 @@
                             <label for="" class="form-label">Outside Catering</label>
                             <input type="text" class="form-control" id="" placeholder="Enter Outside Catering" required>
                         </div>
-                        <div class="my-4">
-                            <span>Add Thambnail</span>
-                            <div class="upload__box">
-                                <div class="upload__btn-box">
-                                    <label class="upload__btn btn-trans py-3 px-5">
-                                        <p class="m-0">Add Photos</p>
-                                        <input type="file" class="upload__inputfile">
-                                    </label>
-                                </div>
-                                <div class="upload__img-wrap"></div>
+                    </div>
+                    <div class="my-4">
+                        <span>Add Thambnail</span>
+                        <div class="upload__box">
+                            <div class="upload__btn-box">
+                                <label class="upload__btn btn-trans py-3 px-5 text-center">
+                                    <p class="m-0">Add Photo</p>
+                                    <input type="file" class="upload__inputfile">
+                                </label>
                             </div>
+                            <div class="upload__img-wrap"></div>
                         </div>
-                        <div class="my-4">
-                            <span>Add Photos</span>
-                            <div class="upload__box">
-                                <div class="upload__btn-box">
-                                    <label class="upload__btn btn-trans py-3 px-5">
-                                        <p class="m-0">Add Photos</p>
-                                        <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
-                                    </label>
-                                </div>
-                                <div class="upload__img-wrap"></div>
+                    </div>
+                    <div class="my-4">
+                        <span>Add Photos</span>
+                        <div class="upload__box">
+                            <div class="upload__btn-box">
+                                <label class="upload__btn btn-trans py-3 px-5 text-center">
+                                    <p class="m-0">Add Photos</p>
+                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                </label>
                             </div>
+                            <div class="upload__img-wrap"></div>
                         </div>
-                        <div class="text-center">
-                            <button class="btn-pink">Save</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
+                <div class="border my-3 p-3">
+                    <h4 class="bg-pink p-3">Area Details</h4>
+                    <div class="container p-0 mb-3">
+                        <div class="row">
+                            <div class="col-12 m-0 p-0">
+                                <div class="table-container">
+                                    <table class="table table-bordered" id="dataTable">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th scope="col" class="col-no">No.</th>
+                                                <th scope="col">Area Name</th>
+                                                <th scope="col">Type</th>
+                                                <th scope="col">Seating Area</th>
+                                                <th scope="col">Floating Area</th>
+                                                <th scope="col">Upload Photo</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="col-no">1</th>
+                                                <td><input type="text"></td>
+                                                <td><input type="text"></td>
+                                                <td><input type="number"></td>
+                                                <td><input type="number"></td>
+                                                <td><input type="file"></td>
+                                                <td><button class="removeRowButton">Remove</button></td>
+                                            </tr>
+                                            
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="container text-center my-3">
+                                    <button class="btn-trans bg-pink w-100 add-btn fw-semibold" id="addRowButton"><i
+                                            class="fa-solid fa-plus mx-3"></i>Add Rows</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn-pink">Save</button>
+                </div>
+            </form>
         </div>
     </div>
 

@@ -147,17 +147,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
   var toggles = document.querySelectorAll('.que');
 
   toggles.forEach(toggle => {
-      var collapseElement = document.querySelector(toggle.getAttribute('href'));
+    var collapseElement = document.querySelector(toggle.getAttribute('href'));
 
-      collapseElement.addEventListener('show.bs.collapse', function () {
-          toggle.querySelector('.fa-plus').classList.add('d-none');
-          toggle.querySelector('.fa-minus').classList.remove('d-none');
-      });
+    collapseElement.addEventListener('show.bs.collapse', function () {
+      toggle.querySelector('.fa-plus').classList.add('d-none');
+      toggle.querySelector('.fa-minus').classList.remove('d-none');
+    });
 
-      collapseElement.addEventListener('hide.bs.collapse', function () {
-          toggle.querySelector('.fa-plus').classList.remove('d-none');
-          toggle.querySelector('.fa-minus').classList.add('d-none');
-      });
+    collapseElement.addEventListener('hide.bs.collapse', function () {
+      toggle.querySelector('.fa-plus').classList.remove('d-none');
+      toggle.querySelector('.fa-minus').classList.add('d-none');
+    });
   });
 });
 
@@ -220,3 +220,67 @@ function ImgUpload() {
     $(this).parent().parent().remove();
   });
 }
+
+// Add row area Table in vendor dashboard Js 
+
+document.getElementById('addRowButton').addEventListener('click', function () {
+  event.preventDefault();
+
+  var tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+  var currentRowCount = tableBody.rows.length;
+  var newRow = tableBody.insertRow();
+
+  var newCell1 = newRow.insertCell(0);
+  var newCell2 = newRow.insertCell(1);
+  var newCell3 = newRow.insertCell(2);
+  var newCell4 = newRow.insertCell(3);
+  var newCell5 = newRow.insertCell(4);
+  var newCell6 = newRow.insertCell(5);
+  var newCell7 = newRow.insertCell(6);
+
+  var rowNumber = document.createElement('th');
+  rowNumber.scope = "row";
+  rowNumber.className = "col-no";
+  rowNumber.innerText = currentRowCount + 1;
+  newCell1.appendChild(rowNumber);
+
+  newCell2.innerHTML = '<input type="text">';
+  newCell3.innerHTML = '<input type="text">';
+  newCell4.innerHTML = '<input type="number">';
+  newCell5.innerHTML = '<input type="number">';
+  newCell6.innerHTML = '<input type="file">';
+  newCell7.innerHTML = '<button class="removeRowButton">Remove</button>';
+
+  newCell7.querySelector('.removeRowButton').addEventListener('click', function () {
+    tableBody.removeChild(newRow);
+    updateRowNumbers();
+  });
+});
+
+function updateRowNumbers() {
+  var tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+  var rows = tableBody.rows;
+  for (var i = 0; i < rows.length; i++) {
+    var cell = rows[i].cells[0];
+    var thElement = cell.querySelector('th');
+
+    if (thElement) {
+      thElement.innerText = i + 1;
+    } else {
+      var rowNumber = document.createElement('th');
+      rowNumber.scope = "row";
+      rowNumber.className = "col-no";
+      rowNumber.innerText = i + 1;
+      cell.innerHTML = '';
+      cell.appendChild(rowNumber);
+    }
+  }
+}
+
+document.querySelectorAll('.removeRowButton').forEach(function (button) {
+  button.addEventListener('click', function () {
+    var row = button.parentNode.parentNode;
+    row.parentNode.removeChild(row);
+    updateRowNumbers();
+  });
+});

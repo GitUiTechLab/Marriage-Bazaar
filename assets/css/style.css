@@ -179,6 +179,7 @@ li {
 .color-red {
     color: red !important;
 }
+
 /*==============================
     Border CSS
 =================================*/
@@ -1169,7 +1170,7 @@ Footer a:hover {
     }
 
     .vendor-dashboard {
-        margin: 70px 0 50px 0 !important; 
+        margin: 70px 0 50px 0 !important;
         padding-left: 21vw !important;
     }
 }
@@ -1177,6 +1178,7 @@ Footer a:hover {
 .v-dashboard-header {
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 .vertical-navbar .nav-item .active {
@@ -1187,9 +1189,101 @@ Footer a:hover {
     width: 30px;
 }
 
+.v-dashboard .content i {
+    color: var(--color-primary5);
+}
+
+.v-dashboard .progress-line {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.v-dashboard .progress {
+    height: 8px;
+}
+
 .v-dashboard-footer {
     position: fixed;
     bottom: 0;
     padding: 1rem;
     z-index: 1000;
+}
+
+.vendor-dashboard form .form-content div {
+    display: flex;
+}
+
+.vendor-dashboard form .form-content label {
+    width: 28%;
+}
+
+.vendor-dashboard form .form-content input,
+.vendor-dashboard form .form-content textarea,
+.vendor-dashboard form .form-content .form-select {
+    width: 72%;
+}
+
+/* Add areas */
+.v-venues form .row div input,
+.v-venues form .row div .form-select,
+.v-venues form .row div .expiry-date {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 12px;
+    margin: 5px auto;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100vw;
+    /* table-layout: fixed; */
+}
+
+.v-venues table input {
+    border: none !important;
+    outline: none;
+    text-align: center;
+}
+
+.v-venues .table thead th {
+    background-color: #f8f8f8;
+}
+
+.v-venues .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.v-venues .table td {
+    padding: 0;
+    margin: auto;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.col-no {
+    width: 50px;
+}
+
+.removeRowButton {
+    display: inline-block;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 2rem;
+}
+
+.removeRowButton:hover {
+    background-color: #d32f2f;
 }
